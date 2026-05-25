@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_49.html -->
+<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_52.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,18 @@
 </script><script src="./index_files/xlsx.full.min.js.다운로드"></script><script src="./index_files/jspdf.umd.min.js.다운로드"></script><script src="./index_files/chart.umd.min.js.다운로드"></script><script src="file:///C:/Users/rladu/Downloads/index_files/xlsx.full.min.js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script><script src="file:///C:/Users/rladu/Downloads/index_files/jspdf.umd.min.js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script><script src="file:///C:/Users/rladu/Downloads/index_files/chart.umd.min.js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script><script src="file:///C:/Users/rladu/Downloads/index_files/xlsx.full.min(1).js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script><script src="file:///C:/Users/rladu/Downloads/index_files/jspdf.umd.min(1).js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script><script src="file:///C:/Users/rladu/Downloads/index_files/chart.umd.min(1).js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script>
 <!-- html2canvas (정산서 이미지 저장용) -->
 <script src="file:///C:/Users/rladu/Downloads/index_files/html2canvas.min.js.%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C"></script>
+<script>
+  // 모든 외부 라이브러리 CDN 폴백 (로컬 경로 실패 시)
+  if (typeof html2canvas === 'undefined') {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"><\/script>');
+  }
+  if (typeof XLSX === 'undefined') {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"><\/script>');
+  }
+  if (typeof window.jspdf === 'undefined' && typeof jspdf === 'undefined') {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"><\/script>');
+  }
+</script><script src="./index_files/html2canvas.min.js.다운로드"></script>
 <style>
 :root {
   --bg-primary: #0a0e1a;
@@ -984,7 +996,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       </div>
     </div>
 
-    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item active" data-nav-id="n1" data-page="dashboard" draggable="false">
+    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item" data-nav-id="n1" data-page="dashboard" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">📊</span>
         <span style="flex:1">대시보드</span>
@@ -1040,7 +1052,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           <button class="nav-action-btn" onclick="event.stopPropagation();editNavItem(&#39;n6b&#39;)" title="수정">✏️</button>
           <button class="nav-action-btn delete" onclick="event.stopPropagation();deleteNavItem(&#39;n6b&#39;)" title="삭제">🗑️</button>
         </span>
-      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item" data-nav-id="n7" data-page="payroll" draggable="false">
+      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item active" data-nav-id="n7" data-page="payroll" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">💵</span>
         <span style="flex:1">급여대장</span>
@@ -1092,7 +1104,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="sync-dot" id="syncDot"></div>
         <div class="sync-info">
           <strong id="syncStatusText"><span style="color:var(--success)">●</span> CRM 연결됨 <span style="color:var(--text-muted);margin:0 6px">|</span> <span style="color:var(--purple)">●</span> 클라우드 저장 활성</strong>
-          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 12:07</strong>
+          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 12:39</strong>
         </div>
       </div>
       <div style="display:flex;gap:8px;align-items:center">
@@ -1197,7 +1209,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- ========== 마스터 시트 ========== -->
-    <div class="page active" id="page-master">
+    <div class="page" id="page-master">
       <div class="topbar">
         <div>
           <h2>📋 마스터 시트</h2>
@@ -1281,7 +1293,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </th><th draggable="true" data-col-id="settlementStatus" ondragstart="handleColDragStart(event,&#39;settlementStatus&#39;)" ondragover="handleColDragOver(event)" ondragleave="handleColDragLeave(event)" ondrop="handleColDrop(event,&#39;settlementStatus&#39;)" ondragend="handleColDragEnd(event)" class="draggable-col-header" style="cursor:grab;user-select:none;" title="드래그해서 순서 변경 (CRM 데이터)">
       <span style="opacity:0.4;margin-right:4px">⋮⋮</span>정산상태 🔗
     </th></tr></thead>
-          <tbody><tr><td><strong>2</strong></td><td><span class="badge badge-accent" title="직영업">🎯 직영업</span></td><td>BNK캐피탈</td><td><span style="cursor:pointer;color:var(--accent);text-decoration:underline;font-weight:600" onclick="event.stopPropagation();openEmpSettlementFromMaster(&#39;강민지&#39;,&#39;2026-06&#39;)" title="클릭하여 2026-06 정산표 열기">강민지</span></td><td>테스트 BNK</td><td>010-0000-0000</td><td>-</td><td>35,000,000원</td><td>1%</td><td>350,000원</td><td>1%</td><td>350,000원</td><td>500,000원</td><td>0원</td><td><strong style="color:var(--success)">1,200,000원</strong></td><td>2026-05-25</td><td><span style="color:var(--success)">2026-05-24</span></td><td><span class="badge badge-success">완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span title="테스트 멘트">테스트 멘트</span></td><td><span class="badge badge-secondary">대기</span></td><td>2026-06</td><td><span class="badge badge-success" style="cursor:pointer;font-weight:600" onclick="event.stopPropagation();toggleSettlementProcess(37)" title="클릭하여 정산대기로 되돌리기">✓ 정산처리</span></td></tr><tr><td><strong>1</strong></td><td><span class="badge badge-accent" title="직영업">🎯 직영업</span></td><td>현대캐피탈</td><td><span style="cursor:pointer;color:var(--accent);text-decoration:underline;font-weight:600" onclick="event.stopPropagation();openEmpSettlementFromMaster(&#39;강민지&#39;,&#39;2026-06&#39;)" title="클릭하여 2026-06 정산표 열기">강민지</span></td><td>테스트 현대</td><td>010-0000-0000</td><td>-</td><td>50,000,000원</td><td>1%</td><td>500,000원</td><td>0%</td><td>0원</td><td>1,000,000원</td><td>0원</td><td><strong style="color:var(--success)">1,500,000원</strong></td><td>2026-05-25</td><td><span style="color:var(--success)">2026-05-25</span></td><td><span class="badge badge-success">완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span class="badge badge-secondary">대기</span></td><td>2026-06</td><td><span class="badge badge-success" style="cursor:pointer;font-weight:600" onclick="event.stopPropagation();toggleSettlementProcess(36)" title="클릭하여 정산대기로 되돌리기">✓ 정산처리</span></td></tr></tbody>
+          <tbody><tr><td><strong>2</strong></td><td><span class="badge badge-accent" title="직영업">🎯 직영업</span></td><td>BNK캐피탈</td><td><span style="cursor:pointer;color:var(--accent);text-decoration:underline;font-weight:600" onclick="event.stopPropagation();openEmpSettlementFromMaster(&#39;강민지&#39;,&#39;2026-06&#39;)" title="클릭하여 2026-06 정산표 열기">강민지</span></td><td>테스트 BNK</td><td>010-0000-0000</td><td>-</td><td>35,000,000원</td><td>1%</td><td>350,000원</td><td>1%</td><td>350,000원</td><td>500,000원</td><td>0원</td><td><strong style="color:var(--success)">1,200,000원</strong></td><td>2026-05-25</td><td><span style="color:var(--success)">2026-05-24</span></td><td><span class="badge badge-success">완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span title="테스트 멘트">테스트 멘트</span></td><td><span class="badge badge-secondary">대기</span></td><td>2026-06</td><td><span class="badge badge-success" style="cursor:pointer;font-weight:600" onclick="event.stopPropagation();toggleSettlementProcess(37)" title="클릭하여 정산대기로 되돌리기">✓ 정산처리</span></td></tr><tr><td><strong>1</strong></td><td><span class="badge badge-accent" title="직영업">🎯 직영업</span></td><td>현대캐피탈</td><td><span style="cursor:pointer;color:var(--accent);text-decoration:underline;font-weight:600" onclick="event.stopPropagation();openEmpSettlementFromMaster(&#39;강민지&#39;,&#39;2026-06&#39;)" title="클릭하여 2026-06 정산표 열기">강민지</span></td><td>테스트 현대</td><td>010-0000-0000</td><td>-</td><td>50,000,000원</td><td>1%</td><td>500,000원</td><td>0%</td><td>0원</td><td>1,000,000원</td><td>0원</td><td><strong style="color:var(--success)">1,500,000원</strong></td><td>2026-05-25</td><td><span style="color:var(--success)">2026-05-25</span></td><td><span class="badge badge-success">완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span class="badge badge-secondary">대기</span></td><td>2026-06</td><td><span class="badge badge-warning" style="cursor:pointer;font-weight:600" onclick="event.stopPropagation();toggleSettlementProcess(36)" title="클릭하여 정산처리 (급여대장 반영)">정산대기</span></td></tr></tbody>
         </table>
       </div>
     </div>
@@ -1651,7 +1663,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- ========== 급여대장 ========== -->
-    <div class="page" id="page-payroll">
+    <div class="page active" id="page-payroll">
       <div class="topbar">
         <div>
           <h2>💵 급여대장</h2>
@@ -1674,7 +1686,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="stat-grid">
           <div class="stat">
             <div class="stat-label">정규직 인원</div>
-            <div class="stat-value" id="payroll-full-count">2명</div>
+            <div class="stat-value" id="payroll-full-count">1명</div>
           </div>
           <div class="stat">
             <div class="stat-label">세전 합계</div>
@@ -1686,7 +1698,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           </div>
           <div class="stat">
             <div class="stat-label">실지급액 (세후+수당)</div>
-            <div class="stat-value" id="payroll-full-post" style="color:var(--success)">700,000원</div>
+            <div class="stat-value" id="payroll-full-post" style="color:var(--success)">0원</div>
           </div>
         </div>
 
@@ -1712,31 +1724,13 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <td>205일</td>
         <td>-</td>
         <td style="color:var(--warning)">-</td>
-        <td><strong style="color:var(--accent)">700,000원</strong><br><span style="font-size:10px;color:var(--text-muted)">자동 1건</span></td>
-        <td style="color:var(--success)"><strong>700,000원</strong></td>
-        <td>-</td>
-        <td><span class="badge badge-warning">대기</span></td>
-        <td onclick="event.stopPropagation()">
-          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl001&#39;)" title="급여 입력">💵</button>
-          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl001&#39;)" title="정산서">📊</button>
-        </td>
-      </tr>
-    
-      <tr>
-        <td><strong>shl009</strong></td>
-        <td>박광석 <span style="font-size:10px;color:var(--text-muted)">(경력직)</span></td>
-        <td>-</td>
-        <td>2023-09-15</td>
-        <td>983일</td>
-        <td>-</td>
-        <td style="color:var(--warning)">-</td>
         <td>-</td>
         <td style="color:var(--success)"><strong>-</strong></td>
         <td>-</td>
         <td><span class="badge badge-danger">미입력</span></td>
         <td onclick="event.stopPropagation()">
-          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl009&#39;)" title="급여 입력">💵</button>
-          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl009&#39;)" title="정산서">📊</button>
+          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl001&#39;)" title="급여 입력">💵</button>
+          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl001&#39;)" title="정산서">📊</button>
         </td>
       </tr>
     </tbody>
@@ -2517,8 +2511,9 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
 .settlement-sheet h3 { margin: 0 0 4px 0; font-size: 16px; color: #000; font-weight: 700; }
 .settlement-sheet .ss-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; padding-bottom: 8px; }
 .settlement-sheet table { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 11px; }
-.settlement-sheet th { background: #c6efce; color: #000; padding: 6px 4px; border: 1px solid #888; text-align: center; font-weight: 600; }
-.settlement-sheet td { padding: 5px 4px; border: 1px solid #888; text-align: center; background: #fff; }
+.settlement-sheet th { background: #c6efce; color: #000; padding: 6px 4px; border: 1px solid #888; text-align: center; font-weight: 600; vertical-align: middle; }
+.settlement-sheet td { padding: 5px 4px; border: 1px solid #888; text-align: center; background: #fff; vertical-align: middle; }
+.settlement-sheet input.ss-edit-input { vertical-align: middle; }
 .settlement-sheet td.num { text-align: right; }
 .settlement-sheet td.sum-label { background: #ffc7ce; font-weight: 700; }
 .settlement-sheet td.sum-value { background: #ffc7ce; font-weight: 700; text-align: right; }
@@ -2534,11 +2529,20 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
 .settlement-sheet input.ss-edit-input { border: 1px dashed #d1d5db; padding: 2px 4px; font-size: 11px; width: 90px; box-sizing: border-box; background: #fafafa; text-align: right; color: #000; }
 .settlement-sheet input.ss-edit-input:focus { outline: none; border-color: #2563eb; background: #eff6ff; }
 .settlement-sheet input.ss-edit-input.ss-pct { width: 42px; }
+/* 캡처 모드(이미지/PDF 출력 시) - input 박스 외곽선/배경 제거하여 인쇄물처럼 보이게 */
+.settlement-sheet.capture-mode input.ss-edit-input,
+.settlement-sheet.capture-mode input.ss-etc-input {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+/* 캡처 모드에서 삭제 버튼/추가 버튼 숨김 */
+.settlement-sheet.capture-mode .ss-no-print { display: none !important; }
 .ss-controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:12px; background:var(--bg-tertiary); border-radius:6px; margin-bottom:12px; }
 .ss-controls label { font-size:12px; color:var(--text-muted); }
 </style>
 
-<div class="modal-bg" id="settlementSheetModal">
+<div class="modal-bg active" id="settlementSheetModal">
   <div class="modal settlement-modal">
     <div class="modal-header">
       <div>
@@ -2574,62 +2578,121 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       <div style="font-size:13px">지급일자 : 26.06</div>
       <h3>■ 담당자 : 강민지</h3>
     </div>
-  <div class="ss-block"><div class="ss-section-title">📌 직영업 실적 명세 (0건)</div><table>
+  <div class="ss-block"><div class="ss-section-title">📌 직영업 실적 명세 (자동 1건 + 수기 0건)</div><table>
     <thead><tr>
       <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
       <th>확정일자</th><th>차종</th><th>정산기준가</th><th>인센%</th><th>인센금액</th>
-      <th>부가세(10%)</th>
+      
       <th>금융사<br>프로모션%</th><th>프로모션금액<br>(부가세X)</th><th>대리점수당</th>
       <th>직영업(%)</th><th>직영업 금액</th><th>직영업 건<br>실적인정</th><th>실적<br>인정금액</th>
-    </tr></thead><tbody><tr><td colspan="18" style="padding:14px;color:#888">해당 정산월에 직영업 건이 없습니다.</td></tr></tbody></table></div><div class="ss-block"><div class="ss-section-title">📌 DB영업 실적 명세 (자동 1건 + 수기 0건)</div><table>
+    </tr></thead><tbody><tr>
+      <td>1</td>
+      <td><span style="cursor:pointer;color:#2563eb;text-decoration:underline" onclick="ssToggleDealDirect(37)" title="클릭하여 DB영업으로 변경">직영업</span></td>
+      <td>BNK캐피탈</td>
+      <td>강민지</td>
+      <td>테스트 BNK</td>
+      <td>2026-05-25</td>
+      <td>-</td>
+      <td class="num"><input class="ss-edit-input" type="text" value="15,000,000원" onchange="ssEditDealAmount(37,&#39;price&#39;,this.value)" title="정산기준가 수기수정"></td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="1" onchange="ssEditDealPct(37,&#39;rate&#39;,this.value)" title="인센%(수수료율)">%</td>
+      <td class="num"><input class="ss-edit-input" type="text" value="350,000원" onchange="ssEditDealAmount(37,&#39;revenue&#39;,this.value)" title="매출액 수기수정"></td>
+      
+      <td><input class="ss-edit-input ss-pct" type="text" value="1" onchange="ssEditDealPct(37,&#39;promoRate&#39;,this.value)" title="금융사 프로모션%">%</td>
+      <td class="num"><input class="ss-edit-input" type="text" value="350,000원" onchange="ssEditDealAmount(37,&#39;promo&#39;,this.value)" title="프로모션 수기수정"></td>
+      <td class="num"><input class="ss-edit-input" type="text" value="500,000원" onchange="ssEditDealAmount(37,&#39;agencyFee&#39;,this.value)" title="대리점수당 수기수정"></td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="70" onchange="ssEditDealPct(37,&#39;directPayPct&#39;,this.value)" title="직영업% (비우면 자동: 경력100/신입70)">%</td>
+      <td class="num">840,000원</td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="30" onchange="ssEditDealPct(37,&#39;directRecognitionPct&#39;,this.value)" title="실적인정% (비우면 자동: 경력30/신입70)">%</td>
+      <td class="num">360,000원</td>
+    </tr><tr>
+      <td colspan="13" class="sum-label">합 계</td>
+      <td class="sum-value">840,000원</td>
+      <td colspan="2" class="sum-label">합 계</td>
+      <td class="sum-value">360,000원</td>
+    </tr></tbody></table><div class="ss-no-print" style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="ssAddManualDirect()" style="font-size:11px">+ 직영업 수기 추가</button></div></div><div class="ss-block"><div class="ss-section-title">📌 DB영업 실적 명세 (자동 0건 + 수기 1건)</div><table>
     <thead><tr>
       <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
       <th>확정일자</th><th>차종</th><th>정산기준가</th><th>수당</th><th>수당금액</th>
       <th>금융사프로모션</th><th>프로모션금액</th><th>대리점수당</th>
       <th>DB영업(%)</th><th>DB영업 금액</th><th>총 매출액<br>(실+추가인정)</th><th>실적구간</th>
-    </tr></thead><tbody><tr>
+    </tr></thead><tbody><tr style="background:#fefce8">
       <td>1</td>
-      <td>DB영업</td>
-      <td>현대캐피탈</td>
+      <td>DB영업<br><span class="ss-no-print" style="font-size:9px;color:#888">(수기)</span></td>
+      <td><input class="ss-edit-input" type="text" value="현대캐피탈" onchange="ssEditManualDB(0,&#39;company&#39;,this.value)" style="width:80px;text-align:left" placeholder="업체명"></td>
       <td>강민지</td>
-      <td>테스트 현대</td>
-      <td>2026-05-25</td>
-      <td>-</td>
-      <td class="num">35,000,000원</td>
-      <td>1%</td>
-      <td class="num">350,000원</td>
-      <td>1%</td>
-      <td class="num">350,000원</td>
-      <td class="num">0원</td>
+      <td><input class="ss-edit-input" type="text" value="김영준" onchange="ssEditManualDB(0,&#39;customer&#39;,this.value)" style="width:70px;text-align:left" placeholder="고객"></td>
+      <td><input class="ss-edit-input" type="text" value="20260505" onchange="ssEditManualDB(0,&#39;date&#39;,this.value)" style="width:90px;text-align:left"></td>
+      <td><input class="ss-edit-input" type="text" value="G80" onchange="ssEditManualDB(0,&#39;car&#39;,this.value)" style="width:70px;text-align:left" placeholder="차종"></td>
+      <td colspan="7" class="num" style="text-align:right"><input class="ss-edit-input" type="text" value="55,000,000원" onchange="ssEditManualDB(0,&#39;amount&#39;,this.value)" style="width:120px"></td>
       <td>100%</td>
-      <td class="num">700,000원</td>
-      <td class="num">700,000원</td>
-      <td style="font-size:10px">-</td>
+      <td class="num">55,000,000원</td>
+      <td class="num">55,000,000원</td>
+      <td style="font-size:10px">- <button class="ss-no-print" onclick="ssRemoveManualDB(0)" style="border:none;background:transparent;cursor:pointer;color:#dc2626;margin-left:4px" title="삭제">✕</button></td>
     </tr><tr>
       <td colspan="14" class="sum-label">합 계</td>
-      <td class="sum-value">700,000원</td>
-      <td class="sum-value">700,000원</td>
-      <td class="sum-label" style="font-size:10px">40%</td>
-    </tr></tbody></table><div style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div></div><div class="ss-block" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"><div><div class="ss-section-title">📌 기타 프로모션 (수기 입력)</div><table class="ss-etc-table"><thead><tr>
+      <td class="sum-value">55,000,000원</td>
+      <td class="sum-value">55,000,000원</td>
+      <td class="sum-label" style="font-size:10px">60%</td>
+    </tr></tbody></table><div class="ss-no-print" style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div></div><div class="ss-block"><div class="ss-section-title">💰 매출 / 구간 산정 <button class="ss-no-print btn btn-sm" onclick="openBracketTableModal()" style="font-size:11px;margin-left:8px" title="수당 구간표">📊 구간표</button></div><table style="font-size:12px">
+    <tbody><tr>
+      <th style="width:40%">항목</th>
+      <th style="width:30%">계산식</th>
+      <th style="width:30%">금액</th>
+    </tr>
+    <tr>
+      <td>① 직영업 실적인정금액</td>
+      <td style="font-size:10px;color:#666">직영업 매출 × 경력30%/신입70%</td>
+      <td class="num">360,000원</td>
+    </tr>
+    <tr>
+      <td>② DB영업 수당 합계</td>
+      <td style="font-size:10px;color:#666">Σ DB영업(매출 × 수당%)</td>
+      <td class="num">55,000,000원</td>
+    </tr>
+    <tr style="background:#fef3c7">
+      <td style="font-weight:700;font-size:13px">
+        🎯 총 매출액 (① + ②)
+        <label class="ss-no-print" style="margin-left:12px;font-size:11px;cursor:pointer;font-weight:400">
+          <input type="checkbox" id="ss-fix-checkbox-1779712746991" onchange="ssToggleFixRecognition()" style="vertical-align:middle;margin-right:4px">
+          총 매출액 + 구간율 고정
+        </label>
+        <span style="background:#10b981;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-left:8px">자동</span>
+      </td>
+      <td style="font-size:10px;color:#666">자동 계산</td>
+      <td class="num" style="font-weight:700;font-size:14px">55,360,000원</td>
+    </tr>
+    <tr>
+      <td>적용 구간 <button class="ss-no-print" onclick="ssEditManualBracket(Math.round(60))" style="background:transparent;border:1px solid #6b7280;color:#6b7280;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer;margin-left:6px" title="구간율 수동 변경">수동 변경</button></td>
+      <td style="font-size:10px;color:#666">3,000만 이상</td>
+      <td style="font-weight:700;color:#2563eb;font-size:13px">60%</td>
+    </tr>
+    <tr style="background:#fce7f3">
+      <td style="font-weight:700">③ 구간적용 수당 (DB영업 + 직영업실적인정) × 구간율</td>
+      <td style="font-size:10px;color:#666"></td>
+      <td class="num" style="font-weight:700;font-size:13px">33,216,000원</td>
+    </tr>
+  </tbody></table><div class="ss-no-print" style="font-size:10px;color:#888;margin-top:4px">💡 체크박스 ON: 그 시점의 총매출액·구간율을 스냅샷으로 고정 → 이후 DB영업% 수정 시 지급액에만 반영 (구간율은 고정)</div></div><div class="ss-block" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"><div><div class="ss-section-title">📌 기타 프로모션 (수기 입력)</div><table class="ss-etc-table"><thead><tr>
     <th style="width:40px">No</th><th>기타 프로모션</th><th style="width:100px">금액</th><th>비고</th><th style="width:40px"></th>
-  </tr></thead><tbody><tr><td colspan="5" style="padding:12px;color:#888">기타 프로모션 항목이 없습니다.</td></tr></tbody></table><div style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div></div><div><div class="ss-section-title">🎯 수당 산출 요약</div><table>
-    <tbody><tr><th style="width:50%">항목</th><th>금액</th></tr>
-    <tr><td>① 직영업 직접지급 수당</td><td class="num">0원</td></tr>
-    <tr><td style="padding-left:16px;font-size:10px;color:#666">= Σ직영업(인센+프로모+대리점-품의) × 100%</td><td></td></tr>
-    <tr><td>② 직영업 실적인정금액</td><td class="num">0원</td></tr>
-    <tr><td>③ DB영업 실적인정금액</td><td class="num">700,000원</td></tr>
-    <tr><td class="sum-label">실적인정 총합 (②+③)</td><td class="sum-value">700,000원</td></tr>
-    <tr><td>적용 구간</td><td style="font-weight:700;color:#2563eb">~ 1,000만원 미만 → 40%</td></tr>
-    <tr><td class="sum-label">④ 구간적용 수당</td><td class="sum-value">280,000원</td></tr>
-    <tr><td>⑤ 기타 프로모션 합계</td><td class="num">0원</td></tr>
+  </tr></thead><tbody><tr>
+        <td>1</td>
+        <td><input class="ss-etc-input" value="정착지원금" onchange="updateEtcPromo(0,&#39;label&#39;,this.value)"></td>
+        <td><input class="ss-etc-input" type="number" value="1000000" onchange="updateEtcPromo(0,&#39;amount&#39;,this.value)" style="text-align:right"></td>
+        <td><input class="ss-etc-input" value="3개월차 적용" onchange="updateEtcPromo(0,&#39;note&#39;,this.value)"></td>
+        <td><button class="ss-no-print" onclick="removeEtcPromo(0)" style="border:none;background:transparent;cursor:pointer;color:#dc2626">✕</button></td>
+      </tr><tr><td colspan="2" class="sum-label">합 계</td><td class="sum-value">1,000,000원</td><td colspan="2"></td></tr></tbody></table><div class="ss-no-print" style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div></div><div><div class="ss-section-title">🎯 최종 수당 산출 요약</div><table>
+    <tbody><tr><th style="width:55%">항목</th><th>금액</th></tr>
+    <tr><td>① 직영업 직접지급 수당</td><td class="num">840,000원</td></tr>
+    <tr><td style="padding-left:16px;font-size:10px;color:#666">= Σ직영업(인센+프로모+대리점-품의) × 건별 직영업%</td><td></td></tr>
+    <tr><td>③ 구간적용 수당 (위에서 산출)</td><td class="num">33,216,000원</td></tr>
+    <tr><td>④ 기타 프로모션 합계</td><td class="num">1,000,000원</td></tr>
     <tr style="background:#fff2cc">
-      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ④ + ⑤</td>
-      <td class="num" style="font-weight:700;font-size:14px;padding:8px">280,000원</td>
+      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ③ + ④</td>
+      <td class="num" style="font-weight:700;font-size:14px;padding:8px">35,056,000원</td>
     </tr>
   </tbody></table></div></div><div class="ss-block" style="margin-top:8px"><div class="ss-summary">
-      <div><div class="lbl">총 합계 (공급가)</div><div class="val">280,000원</div></div>
-      <div><div class="lbl">부가세 (10%)</div><div class="val" style="color:#2563eb">28,000원</div></div>
-      <div><div class="lbl">실 지급액</div><div class="val" style="color:#dc2626">308,000원</div></div>
+      <div><div class="lbl">총 합계</div><div class="val">35,056,000원</div></div>
+      <div><div class="lbl">세금 (3.3%)</div><div class="val" style="color:#f59e0b">1,156,848원</div></div>
+      <div><div class="lbl">실 지급액</div><div class="val" style="color:#dc2626">33,899,152원</div></div>
     </div></div></div>
   </div>
 </div>
@@ -5318,6 +5381,7 @@ function buildSettlementSheet(empId, ym, options = {}) {
   const paymentType = options.paymentType || '사업자';
   const etcPromos = Array.isArray(options.etcPromos) ? options.etcPromos : [];
   const dbDealsManual = Array.isArray(options.dbDealsManual) ? options.dbDealsManual : [];
+  const directDealsManual = Array.isArray(options.directDealsManual) ? options.directDealsManual : [];
   const dealOverrides = (options.dealOverrides && typeof options.dealOverrides === 'object') ? options.dealOverrides : {};
   
   // 1) 해당 정산월에 매칭되는 마스터 건들
@@ -5335,10 +5399,14 @@ function buildSettlementSheet(empId, ym, options = {}) {
   // 3) 건별 계산 보강 + 오버라이드 적용
   const enrichDeal = (d) => {
     const ov = dealOverrides[d._sbId] || {};
+    const price = (typeof ov.price === 'number') ? ov.price : Number(d.price || 0);
+    const rate = (typeof ov.rate === 'number') ? ov.rate : Number(d.rate || 0);
     const revenue = (typeof ov.revenue === 'number') ? ov.revenue : Number(d.revenue || 0);
     const promo = (typeof ov.promo === 'number') ? ov.promo : Number(d.promo || 0);
     const agencyFee = (typeof ov.agencyFee === 'number') ? ov.agencyFee : Number(d.agencyFee || 0);
     const buui = (typeof ov.buui === 'number') ? ov.buui : Number(d.buui || 0);
+    // 금융사 프로모션% (promoRate)
+    const promoRate = (typeof ov.promoRate === 'number') ? ov.promoRate : Number(d.promoRate || 0);
     const realRevenue = revenue + promo + agencyFee - buui;
     const vat = paymentType === '사업자' ? Math.floor(revenue * 0.1) : 0;
     // 건별 % 오버라이드 (없으면 경력 기본값)
@@ -5348,8 +5416,11 @@ function buildSettlementSheet(empId, ym, options = {}) {
     return {
       ...d,
       _ovIsDirect: _ovIsDirect(d),
+      _ovPrice: price,
+      _ovRate: rate,
       _ovRevenue: revenue,
       _ovPromo: promo,
+      _ovPromoRate: promoRate,
       _ovAgencyFee: agencyFee,
       _ovBuui: buui,
       _vat: vat,
@@ -5363,33 +5434,82 @@ function buildSettlementSheet(empId, ym, options = {}) {
   const directRich = directDeals.map(enrichDeal);
   const dbRich = dbDeals.map(enrichDeal);
   
-  // 4) 직영업 직접지급 수당 - 건별 % 합산
-  const directDirectPay = directRich.reduce((s, d) => s + Math.floor(d._payBase * d._directPayPct), 0);
-  const directSumBase = directRich.reduce((s, d) => s + d._payBase, 0);
+  // 4) 직영업 직접지급 수당 - 건별 % 합산 (자동 + 수기)
+  const directAutoBase = directRich.reduce((s, d) => s + d._payBase, 0);
+  const directAutoDirectPay = directRich.reduce((s, d) => s + Math.floor(d._payBase * d._directPayPct), 0);
+  const directAutoRecognition = directRich.reduce((s, d) => s + Math.floor(d._payBase * d._directRecognitionPct), 0);
   
-  // 5) 직영업 실적인정금액 - 건별 % 합산
-  const directRecognitionAmount = directRich.reduce((s, d) => s + Math.floor(d._payBase * d._directRecognitionPct), 0);
+  // 직영업 수기건 - 각 행에 directPayPct/directRecognitionPct/payBase가 있음
+  const directManualBase = directDealsManual.reduce((s, d) => {
+    const rev = Number(d.revenue||0), pr = Number(d.promo||0), af = Number(d.agencyFee||0), bu = Number(d.buui||0);
+    return s + (rev + pr + af - bu);
+  }, 0);
+  const directManualDirectPay = directDealsManual.reduce((s, d) => {
+    const rev = Number(d.revenue||0), pr = Number(d.promo||0), af = Number(d.agencyFee||0), bu = Number(d.buui||0);
+    const base = rev + pr + af - bu;
+    const pct = (typeof d.directPayPct === 'number') ? d.directPayPct : rates.directPay;
+    return s + Math.floor(base * pct);
+  }, 0);
+  const directManualRecognition = directDealsManual.reduce((s, d) => {
+    const rev = Number(d.revenue||0), pr = Number(d.promo||0), af = Number(d.agencyFee||0), bu = Number(d.buui||0);
+    const base = rev + pr + af - bu;
+    const pct = (typeof d.directRecognitionPct === 'number') ? d.directRecognitionPct : rates.directRecognition;
+    return s + Math.floor(base * pct);
+  }, 0);
   
-  // 6) DB영업 실적인정금액 - 건별 % 합산
+  const directSumBase = directAutoBase + directManualBase;
+  const directDirectPay = directAutoDirectPay + directManualDirectPay;
+  
+  // 5) 직영업 실적인정금액 (자동 + 수기) - 매출로 잡힘
+  const directRecognitionAmount = directAutoRecognition + directManualRecognition;
+  
+  // 6) DB영업 총 합계 - 모든 수당 합산 (구간율 적용 전)
+  //    DB영업 매출액 = Σ(매출 + 프로모션 + 대리점수당 - 품의) × DB영업%
+  //    이게 곧 DB영업 "수당" 합계 (구간율 적용 전 베이스)
   const dbAutoBase = dbRich.reduce((s, d) => s + d._payBase, 0);
-  const dbAutoRecognition = dbRich.reduce((s, d) => s + Math.floor(d._payBase * d._dbRecognitionPct), 0);
+  const dbAutoAllowance = dbRich.reduce((s, d) => s + Math.floor(d._payBase * d._dbRecognitionPct), 0);
   const dbManualBase = dbDealsManual.reduce((s, d) => s + Number(d.amount || 0), 0);
+  const dbAllowanceTotal = dbAutoAllowance + Math.floor(dbManualBase * rates.dbRecognition);
   const dbBaseTotal = dbAutoBase + dbManualBase;
-  const dbRecognitionAmount = dbAutoRecognition + Math.floor(dbManualBase * rates.dbRecognition);
+  const dbRecognitionAmount = dbAllowanceTotal;  // 호환용 별칭
   
-  // 7) 실적인정 총합 → 구간 적용
-  //    사용자가 fixedRecognitionTotal 지정 시 그 값으로 구간 결정
-  const autoRecognitionTotal = directRecognitionAmount + dbRecognitionAmount;
-  const recognitionTotal = (typeof options.fixedRecognitionTotal === 'number') 
+  // 7) 총 매출액 = 직영업 실적인정금액 + DB영업 수당 합계
+  const autoRecognitionTotal = directRecognitionAmount + dbAllowanceTotal;
+  
+  // 8) 고정 모드: 체크박스 ON 시점의 총매출액 + 구간율 둘 다 스냅샷
+  //    이후 DB영업% 수정 시 → dbAllowanceTotal은 변하지만 구간율은 고정값 그대로
+  const isRecognitionFixed = (typeof options.fixedRecognitionTotal === 'number');
+  const recognitionTotal = isRecognitionFixed 
                          ? options.fixedRecognitionTotal 
                          : autoRecognitionTotal;
-  const isRecognitionFixed = (typeof options.fixedRecognitionTotal === 'number');
   
-  // 구간율 - 수동 오버라이드 우선
+  // 구간율: 우선순위 = 고정 모드 > 수동 오버라이드 > 자동
   const autoBracket = getBracketInfo(recognitionTotal);
-  const bracketRate = (typeof options.manualBracketRate === 'number') ? options.manualBracketRate : autoBracket.rate;
-  const isBracketManual = (typeof options.manualBracketRate === 'number');
-  const bracketPay = Math.floor(recognitionTotal * bracketRate);
+  let bracketRate, isBracketManual;
+  if (isRecognitionFixed && typeof options.fixedBracketRate === 'number') {
+    // 고정 모드면 저장된 고정 구간율 사용
+    bracketRate = options.fixedBracketRate;
+    isBracketManual = false;
+  } else if (typeof options.manualBracketRate === 'number') {
+    bracketRate = options.manualBracketRate;
+    isBracketManual = true;
+  } else {
+    bracketRate = autoBracket.rate;
+    isBracketManual = false;
+  }
+  
+  // 9) 구간적용 수당
+  //    · 자동 모드: 총매출액 × 구간율
+  //    · 고정 모드: 현재 dbAllowanceTotal(수정 반영됨) × 고정 구간율 + 직영업 실적인정금액 × 고정 구간율
+  //      → 즉, 사용자가 DB영업%를 수정하면 그 변경분이 지급액에 반영되도록
+  let bracketPay;
+  if (isRecognitionFixed) {
+    // 고정 시: 구간율은 고정이지만 매출액 베이스는 현재값으로 재계산 → 수정 반영
+    const currentBase = directRecognitionAmount + dbAllowanceTotal;
+    bracketPay = Math.floor(currentBase * bracketRate);
+  } else {
+    bracketPay = Math.floor(recognitionTotal * bracketRate);
+  }
   
   // 8) 기타 프로모션 합계 (수기 입력)
   const etcTotal = etcPromos.reduce((s, p) => s + Number(p.amount || 0), 0);
@@ -5417,11 +5537,14 @@ function buildSettlementSheet(empId, ym, options = {}) {
     directDeals: directRich,
     dbDeals: dbRich,
     dbDealsManual,
+    directDealsManual,
     etcPromos,
     rates,
     directSumBase, directDirectPay,
     directRecognitionAmount,
+    directAutoBase, directManualBase,
     dbAutoBase, dbManualBase, dbBaseTotal, dbRecognitionAmount,
+    dbAllowanceTotal,
     autoRecognitionTotal, recognitionTotal, isRecognitionFixed,
     bracket: autoBracket, bracketRate, isBracketManual, bracketPay,
     etcTotal, grossTotal, taxAmount, netPay
@@ -5443,17 +5566,14 @@ let currentSheetEmpId = null;
 let currentSheetYM = null;
 let currentSheetState = {
   paymentType: '사업자',
-  etcPromos: [],         // [{label, amount, note}]
-  dbDealsManual: [],     // [{company, customer, car, date, amount, note}]
+  etcPromos: [],
+  dbDealsManual: [],
+  directDealsManual: [],
   payDate: '',
-  // 🆕 자유도: 건별 수정 오버라이드 - key는 거래의 _sbId (Supabase ID)
-  //   { [sbId]: { isDirect, directPayPct, directRecognitionPct, dbRecognitionPct, revenue, promo, agencyFee, buui } }
-  //   값이 undefined면 자동값 사용, 숫자면 수기 오버라이드
   dealOverrides: {},
-  // 🆕 총매출액 고정 - null이면 자동, 숫자면 그 값으로 구간율 결정
-  fixedRecognitionTotal: null,
-  // 🆕 구간율 수동 오버라이드 - null이면 자동, 0.40~0.60 사이 값
-  manualBracketRate: null
+  fixedRecognitionTotal: null,   // 체크박스 ON 시 저장된 총매출액 스냅샷
+  fixedBracketRate: null,        // 체크박스 ON 시 저장된 구간율 스냅샷
+  manualBracketRate: null        // 수동 구간율 (체크박스 OFF 시 사용)
 };
 
 function openSettlementSheet(empId, ymOverride) {
@@ -5468,9 +5588,11 @@ function openSettlementSheet(empId, ymOverride) {
     paymentType: saved.paymentType || '사업자',
     etcPromos: Array.isArray(saved.etcPromos) ? saved.etcPromos : [],
     dbDealsManual: Array.isArray(saved.dbDealsManual) ? saved.dbDealsManual : [],
+    directDealsManual: Array.isArray(saved.directDealsManual) ? saved.directDealsManual : [],
     payDate: saved.payDate || '',
     dealOverrides: (saved.dealOverrides && typeof saved.dealOverrides === 'object') ? saved.dealOverrides : {},
     fixedRecognitionTotal: (typeof saved.fixedRecognitionTotal === 'number') ? saved.fixedRecognitionTotal : null,
+    fixedBracketRate: (typeof saved.fixedBracketRate === 'number') ? saved.fixedBracketRate : null,
     manualBracketRate: (typeof saved.manualBracketRate === 'number') ? saved.manualBracketRate : null
   };
   
@@ -5588,7 +5710,7 @@ function renderSettlementSheetHTML(s) {
   
   // 2) 블록1: 직영업
   html += `<div class="ss-block">`;
-  html += `<div class="ss-section-title">📌 직영업 실적 명세 (${s.directDeals.length}건)</div>`;
+  html += `<div class="ss-section-title">📌 직영업 실적 명세 (자동 ${s.directDeals.length}건 + 수기 ${s.directDealsManual.length}건)</div>`;
   html += `<table>
     <thead><tr>
       <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
@@ -5606,7 +5728,7 @@ function renderSettlementSheetHTML(s) {
     const recogAmt = Math.floor(d._payBase * d._directRecognitionPct);
     const ov = currentSheetState.dealOverrides[sid] || {};
     const dotStyle = 'width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:3px';
-    const _editedMark = (key) => (typeof ov[key] !== 'undefined') 
+    const _editedMark = (key) => ''; const _editedMark_old = (key) => (typeof ov[key] !== 'undefined') 
       ? `<span style="${dotStyle};background:#f59e0b" title="수기 수정됨"></span>` : '';
     html += `<tr>
       <td>${i+1}</td>
@@ -5616,11 +5738,11 @@ function renderSettlementSheetHTML(s) {
       <td>${escapeHtml(d.customer || '-')}</td>
       <td>${d.confirmedDate || d.date || '-'}</td>
       <td>${escapeHtml(d.car || '-')}</td>
-      <td class="num">${fmt(d.price)}</td>
-      <td>${(d.rate || 0)}%</td>
-      <td class="num">${_editedMark('revenue')}<input class="ss-edit-input" type="text" value="${fmt(d._ovRevenue)}" onchange="ssEditDealAmount(${sid},'revenue',this.value)" title="매출액 수기수정 (비우면 자동값)"></td>
+      <td class="num">${_editedMark('price')}<input class="ss-edit-input" type="text" value="${fmt(d._ovPrice)}" onchange="ssEditDealAmount(${sid},'price',this.value)" title="정산기준가 수기수정"></td>
+      <td>${_editedMark('rate')}<input class="ss-edit-input ss-pct" type="text" value="${d._ovRate}" onchange="ssEditDealPct(${sid},'rate',this.value)" title="인센%(수수료율)">%</td>
+      <td class="num">${_editedMark('revenue')}<input class="ss-edit-input" type="text" value="${fmt(d._ovRevenue)}" onchange="ssEditDealAmount(${sid},'revenue',this.value)" title="매출액 수기수정"></td>
       ${s.paymentType==='사업자' ? `<td class="num">${fmt(d._vat)}</td>` : ''}
-      <td>${(d.promoRate || 0)}%</td>
+      <td>${_editedMark('promoRate')}<input class="ss-edit-input ss-pct" type="text" value="${d._ovPromoRate}" onchange="ssEditDealPct(${sid},'promoRate',this.value)" title="금융사 프로모션%">%</td>
       <td class="num">${_editedMark('promo')}<input class="ss-edit-input" type="text" value="${fmt(d._ovPromo)}" onchange="ssEditDealAmount(${sid},'promo',this.value)" title="프로모션 수기수정"></td>
       <td class="num">${_editedMark('agencyFee')}<input class="ss-edit-input" type="text" value="${fmt(d._ovAgencyFee)}" onchange="ssEditDealAmount(${sid},'agencyFee',this.value)" title="대리점수당 수기수정"></td>
       <td>${_editedMark('directPayPct')}<input class="ss-edit-input ss-pct" type="text" value="${directPct}" onchange="ssEditDealPct(${sid},'directPayPct',this.value)" title="직영업% (비우면 자동: 경력100/신입70)">%</td>
@@ -5629,12 +5751,45 @@ function renderSettlementSheetHTML(s) {
       <td class="num">${fmt(recogAmt)}</td>
     </tr>`;
   });
-  if (s.directDeals.length === 0) {
+  
+  // 직영업 수기 건들
+  s.directDealsManual.forEach((d, i) => {
+    const rev = Number(d.revenue||0), pr = Number(d.promo||0), af = Number(d.agencyFee||0), bu = Number(d.buui||0);
+    const base = rev + pr + af - bu;
+    const vat = s.paymentType === '사업자' ? Math.floor(rev * 0.1) : 0;
+    const dPct = (typeof d.directPayPct === 'number') ? d.directPayPct : s.rates.directPay;
+    const rPct = (typeof d.directRecognitionPct === 'number') ? d.directRecognitionPct : s.rates.directRecognition;
+    const directAmt2 = Math.floor(base * dPct);
+    const recogAmt2 = Math.floor(base * rPct);
+    const rowNo = s.directDeals.length + i + 1;
+    html += `<tr style="background:#fefce8">
+      <td>${rowNo}</td>
+      <td>직영업<br><span class="ss-no-print" style="font-size:9px;color:#888">(수기)</span></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.finance||'')}" onchange="ssEditManualDirect(${i},'finance',this.value)" style="width:80px;text-align:left" placeholder="업체명"></td>
+      <td>${escapeHtml(s.employee.name)}</td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.customer||'')}" onchange="ssEditManualDirect(${i},'customer',this.value)" style="width:70px;text-align:left" placeholder="고객"></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.date||'')}" onchange="ssEditManualDirect(${i},'date',this.value)" style="width:90px;text-align:left" placeholder="YYYY-MM-DD"></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.car||'')}" onchange="ssEditManualDirect(${i},'car',this.value)" style="width:70px;text-align:left" placeholder="차종"></td>
+      <td class="num"><input class="ss-edit-input" type="text" value="${fmt(d.price||0)}" onchange="ssEditManualDirect(${i},'price',this.value)"></td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="${d.rate||0}" onchange="ssEditManualDirect(${i},'rate',this.value)">%</td>
+      <td class="num"><input class="ss-edit-input" type="text" value="${fmt(rev)}" onchange="ssEditManualDirect(${i},'revenue',this.value)"></td>
+      ${s.paymentType==='사업자' ? `<td class="num">${fmt(vat)}</td>` : ''}
+      <td><input class="ss-edit-input ss-pct" type="text" value="${d.promoRate||0}" onchange="ssEditManualDirect(${i},'promoRate',this.value)">%</td>
+      <td class="num"><input class="ss-edit-input" type="text" value="${fmt(pr)}" onchange="ssEditManualDirect(${i},'promo',this.value)"></td>
+      <td class="num"><input class="ss-edit-input" type="text" value="${fmt(af)}" onchange="ssEditManualDirect(${i},'agencyFee',this.value)"></td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="${Math.round(dPct*100)}" onchange="ssEditManualDirectPct(${i},'directPayPct',this.value)">%</td>
+      <td class="num">${fmt(directAmt2)}</td>
+      <td><input class="ss-edit-input ss-pct" type="text" value="${Math.round(rPct*100)}" onchange="ssEditManualDirectPct(${i},'directRecognitionPct',this.value)">%</td>
+      <td class="num">${fmt(recogAmt2)} <button class="ss-no-print" onclick="ssRemoveManualDirect(${i})" style="border:none;background:transparent;cursor:pointer;color:#dc2626;margin-left:4px" title="이 행 삭제">✕</button></td>
+    </tr>`;
+  });
+  
+  if (s.directDeals.length === 0 && s.directDealsManual.length === 0) {
     const cols = s.paymentType === '사업자' ? 18 : 17;
-    html += `<tr><td colspan="${cols}" style="padding:14px;color:#888">해당 정산월에 직영업 건이 없습니다.</td></tr>`;
+    html += `<tr><td colspan="${cols}" style="padding:14px;color:#888">해당 정산월에 직영업 건이 없습니다. <button class="ss-no-print" onclick="ssAddManualDirect()" style="margin-left:8px;padding:2px 8px;font-size:11px">+ 수기 추가</button></td></tr>`;
   }
   // 합계 행
-  if (s.directDeals.length > 0) {
+  if (s.directDeals.length > 0 || s.directDealsManual.length > 0) {
     const cols1 = s.paymentType === '사업자' ? 14 : 13;
     html += `<tr>
       <td colspan="${cols1}" class="sum-label">합 계</td>
@@ -5643,7 +5798,9 @@ function renderSettlementSheetHTML(s) {
       <td class="sum-value">${fmt(s.directRecognitionAmount)}</td>
     </tr>`;
   }
-  html += `</tbody></table></div>`;
+  html += `</tbody></table>`;
+  html += `<div class="ss-no-print" style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="ssAddManualDirect()" style="font-size:11px">+ 직영업 수기 추가</button></div>`;
+  html += `</div>`;
   
   // 3) 블록2: DB영업
   html += `<div class="ss-block">`;
@@ -5663,7 +5820,7 @@ function renderSettlementSheetHTML(s) {
     const dbAmt = Math.floor(d._payBase * d._dbRecognitionPct);
     const ov = currentSheetState.dealOverrides[sid] || {};
     const dotStyle = 'width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:3px';
-    const _editedMark = (key) => (typeof ov[key] !== 'undefined') 
+    const _editedMark = (key) => ''; const _editedMark_old = (key) => (typeof ov[key] !== 'undefined') 
       ? `<span style="${dotStyle};background:#f59e0b" title="수기 수정됨"></span>` : '';
     html += `<tr>
       <td>${i+1}</td>
@@ -5673,10 +5830,10 @@ function renderSettlementSheetHTML(s) {
       <td>${escapeHtml(d.customer || '-')}</td>
       <td>${d.confirmedDate || d.date || '-'}</td>
       <td>${escapeHtml(d.car || '-')}</td>
-      <td class="num">${fmt(d.price)}</td>
-      <td>${(d.rate || 0)}%</td>
+      <td class="num">${_editedMark('price')}<input class="ss-edit-input" type="text" value="${fmt(d._ovPrice)}" onchange="ssEditDealAmount(${sid},'price',this.value)" title="정산기준가 수기수정"></td>
+      <td>${_editedMark('rate')}<input class="ss-edit-input ss-pct" type="text" value="${d._ovRate}" onchange="ssEditDealPct(${sid},'rate',this.value)" title="수당%(수수료율)">%</td>
       <td class="num">${_editedMark('revenue')}<input class="ss-edit-input" type="text" value="${fmt(d._ovRevenue)}" onchange="ssEditDealAmount(${sid},'revenue',this.value)"></td>
-      <td>${(d.promoRate || 0)}%</td>
+      <td>${_editedMark('promoRate')}<input class="ss-edit-input ss-pct" type="text" value="${d._ovPromoRate}" onchange="ssEditDealPct(${sid},'promoRate',this.value)" title="금융사 프로모션%">%</td>
       <td class="num">${_editedMark('promo')}<input class="ss-edit-input" type="text" value="${fmt(d._ovPromo)}" onchange="ssEditDealAmount(${sid},'promo',this.value)"></td>
       <td class="num">${_editedMark('agencyFee')}<input class="ss-edit-input" type="text" value="${fmt(d._ovAgencyFee)}" onchange="ssEditDealAmount(${sid},'agencyFee',this.value)"></td>
       <td>${_editedMark('dbRecognitionPct')}<input class="ss-edit-input ss-pct" type="text" value="${dbPct}" onchange="ssEditDealPct(${sid},'dbRecognitionPct',this.value)" title="DB영업% (비우면 자동 100)">%</td>
@@ -5687,23 +5844,23 @@ function renderSettlementSheetHTML(s) {
   });
   // 수기 DB건
   s.dbDealsManual.forEach((d, i) => {
-    html += `<tr>
+    html += `<tr style="background:#fefce8">
       <td>${s.dbDeals.length + i + 1}</td>
-      <td>DB영업<br><span style="font-size:9px;color:#888">(수기)</span></td>
-      <td>${escapeHtml(d.company || '-')}</td>
+      <td>DB영업<br><span class="ss-no-print" style="font-size:9px;color:#888">(수기)</span></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.company||'')}" onchange="ssEditManualDB(${i},'company',this.value)" style="width:80px;text-align:left" placeholder="업체명"></td>
       <td>${escapeHtml(emp.name)}</td>
-      <td>${escapeHtml(d.customer || '-')}</td>
-      <td>${d.date || '-'}</td>
-      <td>${escapeHtml(d.car || '-')}</td>
-      <td colspan="7" class="num" style="text-align:right">${fmt(d.amount)}</td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.customer||'')}" onchange="ssEditManualDB(${i},'customer',this.value)" style="width:70px;text-align:left" placeholder="고객"></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.date||'')}" onchange="ssEditManualDB(${i},'date',this.value)" style="width:90px;text-align:left"></td>
+      <td><input class="ss-edit-input" type="text" value="${escapeHtml(d.car||'')}" onchange="ssEditManualDB(${i},'car',this.value)" style="width:70px;text-align:left" placeholder="차종"></td>
+      <td colspan="7" class="num" style="text-align:right"><input class="ss-edit-input" type="text" value="${fmt(d.amount||0)}" onchange="ssEditManualDB(${i},'amount',this.value)" style="width:120px"></td>
       <td>100%</td>
-      <td class="num">${fmt(d.amount)}</td>
-      <td class="num">${fmt(d.amount)}</td>
-      <td style="font-size:10px">-</td>
+      <td class="num">${fmt(d.amount||0)}</td>
+      <td class="num">${fmt(d.amount||0)}</td>
+      <td style="font-size:10px">- <button class="ss-no-print" onclick="ssRemoveManualDB(${i})" style="border:none;background:transparent;cursor:pointer;color:#dc2626;margin-left:4px" title="삭제">✕</button></td>
     </tr>`;
   });
   if (s.dbDeals.length === 0 && s.dbDealsManual.length === 0) {
-    html += `<tr><td colspan="17" style="padding:14px;color:#888">해당 정산월에 DB영업 건이 없습니다. <button onclick="addManualDBDeal()" style="margin-left:8px;padding:2px 8px;font-size:11px">+ 수기 추가</button></td></tr>`;
+    html += `<tr><td colspan="17" style="padding:14px;color:#888">해당 정산월에 DB영업 건이 없습니다. <button class="ss-no-print" onclick="addManualDBDeal()" style="margin-left:8px;padding:2px 8px;font-size:11px">+ 수기 추가</button></td></tr>`;
   }
   // DB영업 합계
   if (s.dbBaseTotal > 0) {
@@ -5711,14 +5868,81 @@ function renderSettlementSheetHTML(s) {
       <td colspan="14" class="sum-label">합 계</td>
       <td class="sum-value">${fmt(s.dbRecognitionAmount)}</td>
       <td class="sum-value">${fmt(s.dbBaseTotal)}</td>
-      <td class="sum-label" style="font-size:10px">${(s.bracket.rate*100)}%</td>
+      <td class="sum-label" style="font-size:10px">${Math.round(s.bracket.rate*100)}%</td>
     </tr>`;
   }
   html += `</tbody></table>`;
-  html += `<div style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div>`;
+  html += `<div class="ss-no-print" style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div>`;
   html += `</div>`;
   
-  // 4) 블록3: 기타 프로모션 (수기 입력)
+  // 4) 블록3 (NEW): 매출액 통합 박스 - 전폭, 상단 위치
+  const fixCheckId = 'ss-fix-checkbox-' + Date.now();
+  const fixedBadge = s.isRecognitionFixed
+    ? `<span style="background:#dc2626;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-left:8px">🔒 고정중</span>`
+    : `<span style="background:#10b981;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-left:8px">자동</span>`;
+  
+  // 적용 구간 UI - 수동 가능, 고정 시 해제용으로만
+  let bracketCtrlUI;
+  if (s.isRecognitionFixed) {
+    bracketCtrlUI = `<span class="ss-no-print" style="font-size:10px;color:#dc2626;margin-left:6px">(고정 모드 해제 시 변경 가능)</span>`;
+  } else if (s.isBracketManual) {
+    bracketCtrlUI = `<button class="ss-no-print" onclick="ssEditManualBracket('')" style="background:#dc2626;color:#fff;border:none;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer;margin-left:6px" title="수동 해제">수동 해제</button>`;
+  } else {
+    bracketCtrlUI = `<button class="ss-no-print" onclick="ssEditManualBracket(Math.round(${s.bracketRate*100}))" style="background:transparent;border:1px solid #6b7280;color:#6b7280;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer;margin-left:6px" title="구간율 수동 변경">수동 변경</button>`;
+  }
+  const bracketRateUI = s.isBracketManual
+    ? `<input class="ss-edit-input ss-pct" type="text" value="${Math.round(s.bracketRate*100)}" onchange="ssEditManualBracket(this.value)" style="width:48px;text-align:right;background:#fff7e6;border:1px solid #f59e0b">%`
+    : `${Math.round(s.bracketRate*100)}%`;
+  
+  html += `<div class="ss-block">`;
+  html += `<div class="ss-section-title">💰 매출 / 구간 산정 <button class="ss-no-print btn btn-sm" onclick="openBracketTableModal()" style="font-size:11px;margin-left:8px" title="수당 구간표">📊 구간표</button></div>`;
+  html += `<table style="font-size:12px">
+    <tr>
+      <th style="width:40%">항목</th>
+      <th style="width:30%">계산식</th>
+      <th style="width:30%">금액</th>
+    </tr>
+    <tr>
+      <td>① 직영업 실적인정금액</td>
+      <td style="font-size:10px;color:#666">직영업 매출 × 경력30%/신입70%</td>
+      <td class="num">${fmt(s.directRecognitionAmount)}</td>
+    </tr>
+    <tr>
+      <td>② DB영업 수당 합계</td>
+      <td style="font-size:10px;color:#666">Σ DB영업(매출 × 수당%)</td>
+      <td class="num">${fmt(s.dbAllowanceTotal)}</td>
+    </tr>
+    <tr style="background:#fef3c7">
+      <td style="font-weight:700;font-size:13px">
+        🎯 총 매출액 (① + ②)
+        <label class="ss-no-print" style="margin-left:12px;font-size:11px;cursor:pointer;font-weight:400">
+          <input type="checkbox" id="${fixCheckId}" ${s.isRecognitionFixed?'checked':''} onchange="ssToggleFixRecognition()" style="vertical-align:middle;margin-right:4px">
+          총 매출액 + 구간율 고정
+        </label>
+        ${fixedBadge}
+      </td>
+      <td style="font-size:10px;color:#666">${s.isRecognitionFixed?'고정 시점 스냅샷 값':'자동 계산'}</td>
+      <td class="num" style="font-weight:700;font-size:14px">${
+        s.isRecognitionFixed 
+          ? `<input class="ss-edit-input" type="text" value="${fmt(s.recognitionTotal)}" onchange="ssEditFixedRecognition(this.value)" style="width:140px;text-align:right;background:#fff7e6;border:1px solid #f59e0b;font-weight:700;font-size:13px">`
+          : fmt(s.recognitionTotal)
+      }</td>
+    </tr>
+    <tr>
+      <td>적용 구간 ${bracketCtrlUI}</td>
+      <td style="font-size:10px;color:#666">${s.bracket.label}</td>
+      <td style="font-weight:700;color:#2563eb;font-size:13px">${bracketRateUI}</td>
+    </tr>
+    <tr style="background:#fce7f3">
+      <td style="font-weight:700">③ 구간적용 수당 (DB영업 + 직영업실적인정) × 구간율</td>
+      <td style="font-size:10px;color:#666">${s.isRecognitionFixed?'(매출액 수정 반영, 구간율 고정)':''}</td>
+      <td class="num" style="font-weight:700;font-size:13px">${fmt(s.bracketPay)}</td>
+    </tr>
+  </table>`;
+  html += `<div class="ss-no-print" style="font-size:10px;color:#888;margin-top:4px">💡 체크박스 ON: 그 시점의 총매출액·구간율을 스냅샷으로 고정 → 이후 DB영업% 수정 시 지급액에만 반영 (구간율은 고정)</div>`;
+  html += `</div>`;
+  
+  // 5) 블록4: 기타 프로모션 + 최종 수당 산출 요약 (2칸 grid)
   html += `<div class="ss-block" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">`;
   html += `<div>`;
   html += `<div class="ss-section-title">📌 기타 프로모션 (수기 입력)</div>`;
@@ -5734,49 +5958,29 @@ function renderSettlementSheetHTML(s) {
         <td><input class="ss-etc-input" value="${escapeHtml(p.label || '')}" onchange="updateEtcPromo(${i},'label',this.value)"></td>
         <td><input class="ss-etc-input" type="number" value="${Number(p.amount||0)}" onchange="updateEtcPromo(${i},'amount',this.value)" style="text-align:right"></td>
         <td><input class="ss-etc-input" value="${escapeHtml(p.note || '')}" onchange="updateEtcPromo(${i},'note',this.value)"></td>
-        <td><button onclick="removeEtcPromo(${i})" style="border:none;background:transparent;cursor:pointer;color:#dc2626">✕</button></td>
+        <td><button class="ss-no-print" onclick="removeEtcPromo(${i})" style="border:none;background:transparent;cursor:pointer;color:#dc2626">✕</button></td>
       </tr>`;
     });
     html += `<tr><td colspan="2" class="sum-label">합 계</td><td class="sum-value">${fmt(s.etcTotal)}</td><td colspan="2"></td></tr>`;
   }
   html += `</tbody></table>`;
-  html += `<div style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div>`;
+  html += `<div class="ss-no-print" style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div>`;
   html += `</div>`;
   
-  // 5) 블록4: 수당 산출 요약 (구간 적용)
+  // 우측: 최종 수당 산출 요약
   html += `<div>`;
-  html += `<div class="ss-section-title">🎯 수당 산출 요약 <button class="btn btn-sm" onclick="openBracketTableModal()" style="font-size:11px;margin-left:8px" title="수당 구간표">📊 구간표</button></div>`;
-  
-  const fixedMark = s.isRecognitionFixed 
-    ? `<button onclick="ssToggleFixRecognition()" style="background:#dc2626;color:#fff;border:none;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer" title="고정 해제">🔒 고정중</button>` 
-    : `<button onclick="ssToggleFixRecognition()" style="background:transparent;border:1px solid #6b7280;color:#6b7280;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer" title="현재값으로 고정">🔓 자동</button>`;
-  const recogInput = s.isRecognitionFixed
-    ? `<input class="ss-edit-input" type="text" value="${fmt(s.recognitionTotal)}" onchange="ssEditFixedRecognition(this.value)" style="width:120px;text-align:right;background:#fff7e6;border:1px solid #f59e0b">`
-    : `<span style="font-weight:700">${fmt(s.recognitionTotal)}</span>`;
-  
-  const bracketMark = s.isBracketManual
-    ? `<button onclick="ssEditManualBracket('')" style="background:#dc2626;color:#fff;border:none;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer" title="수동 해제">수동</button>`
-    : `<button onclick="ssEditManualBracket(Math.round(${s.bracketRate*100}))" style="background:transparent;border:1px solid #6b7280;color:#6b7280;border-radius:3px;padding:2px 6px;font-size:10px;cursor:pointer" title="구간율 수동">자동</button>`;
-  const bracketRateUI = s.isBracketManual
-    ? `<input class="ss-edit-input ss-pct" type="text" value="${Math.round(s.bracketRate*100)}" onchange="ssEditManualBracket(this.value)" style="width:48px;text-align:right;background:#fff7e6;border:1px solid #f59e0b">%`
-    : `${(s.bracketRate*100)}%`;
-  
+  html += `<div class="ss-section-title">🎯 최종 수당 산출 요약</div>`;
   html += `<table>
-    <tr><th style="width:50%">항목</th><th>금액</th></tr>
+    <tr><th style="width:55%">항목</th><th>금액</th></tr>
     <tr><td>① 직영업 직접지급 수당</td><td class="num">${fmt(s.directDirectPay)}</td></tr>
     <tr><td style="padding-left:16px;font-size:10px;color:#666">= Σ직영업(인센+프로모+대리점-품의) × 건별 직영업%</td><td></td></tr>
-    <tr><td>② 직영업 실적인정금액</td><td class="num">${fmt(s.directRecognitionAmount)}</td></tr>
-    <tr><td>③ DB영업 실적인정금액</td><td class="num">${fmt(s.dbRecognitionAmount)}</td></tr>
-    <tr><td class="sum-label">실적인정 총합 (②+③) ${fixedMark}</td><td class="sum-value">${recogInput}</td></tr>
-    <tr><td>적용 구간 ${bracketMark}</td><td style="font-weight:700;color:#2563eb">${s.bracket.label} → ${bracketRateUI}</td></tr>
-    <tr><td class="sum-label">④ 구간적용 수당</td><td class="sum-value">${fmt(s.bracketPay)}</td></tr>
-    <tr><td>⑤ 기타 프로모션 합계</td><td class="num">${fmt(s.etcTotal)}</td></tr>
+    <tr><td>③ 구간적용 수당 (위에서 산출)</td><td class="num">${fmt(s.bracketPay)}</td></tr>
+    <tr><td>④ 기타 프로모션 합계</td><td class="num">${fmt(s.etcTotal)}</td></tr>
     <tr style="background:#fff2cc">
-      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ④ + ⑤</td>
+      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ③ + ④</td>
       <td class="num" style="font-weight:700;font-size:14px;padding:8px">${fmt(s.grossTotal)}</td>
     </tr>
   </table>`;
-  html += `<div style="font-size:10px;color:#888;margin-top:4px">🟠 주황 점 = 수기 수정된 값 · 영업구분/금액/% 모두 클릭하여 수정 가능 · 수정값은 자동 저장됨</div>`;
   html += `</div>`;
   html += `</div>`;
   
@@ -5818,19 +6022,78 @@ function updateEtcPromo(idx, field, value) {
   rebuildSettlementSheet();
 }
 
-// ===== DB영업 수기 추가 =====
+// ===== DB영업 수기 추가 (빈 행으로 추가 - 인라인 편집) =====
 function addManualDBDeal() {
-  const company = prompt('업체명 (금융사):', '');
-  if (company === null) return;
-  const customer = prompt('고객명:', '');
-  if (customer === null) return;
-  const car = prompt('차종:', '');
-  if (car === null) return;
-  const date = prompt('확정일자 (YYYY-MM-DD):', new Date().toISOString().slice(0,10));
-  if (date === null) return;
-  const amount = Number(prompt('실적인정 금액(원):', '0') || 0);
-  if (!amount) return;
-  currentSheetState.dbDealsManual.push({ company, customer, car, date, amount, note: '' });
+  currentSheetState.dbDealsManual.push({ 
+    company: '', customer: '', car: '', 
+    date: new Date().toISOString().slice(0,10), 
+    amount: 0, note: '' 
+  });
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+function ssEditManualDB(idx, field, valueStr) {
+  if (!currentSheetState.dbDealsManual[idx]) return;
+  if (field === 'amount') {
+    const v = String(valueStr || '').replace(/[,원\s]/g,'');
+    currentSheetState.dbDealsManual[idx][field] = Number(v) || 0;
+  } else {
+    currentSheetState.dbDealsManual[idx][field] = valueStr;
+  }
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+function ssRemoveManualDB(idx) {
+  if (!currentSheetState.dbDealsManual[idx]) return;
+  if (!confirm('이 DB영업 수기건을 삭제할까요?')) return;
+  currentSheetState.dbDealsManual.splice(idx, 1);
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+
+// ===== 직영업 수기 추가/편집/삭제 =====
+function ssAddManualDirect() {
+  currentSheetState.directDealsManual.push({
+    finance: '', customer: '', car: '',
+    date: new Date().toISOString().slice(0,10),
+    price: 0, rate: 0,
+    revenue: 0, promoRate: 0, promo: 0, agencyFee: 0, buui: 0,
+    directPayPct: null, directRecognitionPct: null,
+    note: ''
+  });
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+function ssEditManualDirect(idx, field, valueStr) {
+  if (!currentSheetState.directDealsManual[idx]) return;
+  // 금액/% 필드면 숫자로
+  const numFields = ['price','rate','revenue','promoRate','promo','agencyFee','buui'];
+  if (numFields.includes(field)) {
+    const v = String(valueStr || '').replace(/[,원%\s]/g,'');
+    currentSheetState.directDealsManual[idx][field] = Number(v) || 0;
+  } else {
+    currentSheetState.directDealsManual[idx][field] = valueStr;
+  }
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+function ssEditManualDirectPct(idx, field, valueStr) {
+  if (!currentSheetState.directDealsManual[idx]) return;
+  const v = String(valueStr || '').replace(/[%\s]/g,'');
+  if (v === '') {
+    currentSheetState.directDealsManual[idx][field] = null;  // 자동값
+  } else {
+    const num = Number(v);
+    if (!isNaN(num)) currentSheetState.directDealsManual[idx][field] = num / 100;
+  }
+  autoSaveSettlementSheet();
+  rebuildSettlementSheet();
+}
+function ssRemoveManualDirect(idx) {
+  if (!currentSheetState.directDealsManual[idx]) return;
+  if (!confirm('이 직영업 수기건을 삭제할까요?')) return;
+  currentSheetState.directDealsManual.splice(idx, 1);
+  autoSaveSettlementSheet();
   rebuildSettlementSheet();
 }
 
@@ -5918,15 +6181,25 @@ function ssResetDealOverride(sbId) {
   rebuildSettlementSheet();
 }
 
-// ===== 총매출액(실적인정총합) 고정/해제 =====
+// ===== 총매출액(실적인정총합) 고정/해제 - 구간율도 동시에 스냅샷 =====
 function ssToggleFixRecognition() {
   if (currentSheetState.fixedRecognitionTotal !== null) {
     // 고정 해제
     currentSheetState.fixedRecognitionTotal = null;
+    currentSheetState.fixedBracketRate = null;
   } else {
-    // 현재 자동 계산값으로 고정
-    const sheet = buildSettlementSheet(currentSheetEmpId, currentSheetYM, currentSheetState);
-    if (sheet) currentSheetState.fixedRecognitionTotal = sheet.autoRecognitionTotal;
+    // 현재 자동 계산값으로 고정 (총매출액 + 구간율 둘 다)
+    const sheet = buildSettlementSheet(currentSheetEmpId, currentSheetYM, {
+      ...currentSheetState,
+      fixedRecognitionTotal: null,
+      fixedBracketRate: null,
+      manualBracketRate: null  // 자동 상태에서 계산
+    });
+    if (sheet) {
+      currentSheetState.fixedRecognitionTotal = sheet.autoRecognitionTotal;
+      currentSheetState.fixedBracketRate = sheet.bracket.rate;  // 자동 구간율
+      currentSheetState.manualBracketRate = null;  // 수동 모드 해제
+    }
   }
   autoSaveSettlementSheet();
   rebuildSettlementSheet();
@@ -5962,7 +6235,7 @@ function openBracketTableModal() {
   const html = SETTLEMENT_BRACKETS.map(b => `
     <tr>
       <td style="padding:8px;border:1px solid var(--border)">${b.label}</td>
-      <td style="padding:8px;border:1px solid var(--border);text-align:center;font-weight:700;color:var(--accent)">${(b.rate*100)}%</td>
+      <td style="padding:8px;border:1px solid var(--border);text-align:center;font-weight:700;color:var(--accent)">${Math.round(b.rate*100)}%</td>
     </tr>
   `).join('');
   $('#bracketTableBody').innerHTML = html;
@@ -5971,33 +6244,51 @@ function openBracketTableModal() {
 function closeBracketTableModal() { $('#bracketTableModal').classList.remove('active'); }
 
 // ===== 출력: 이미지 / PDF / 엑셀 =====
+// 캡처 전에 모든 input의 현재 value를 attribute로 동기화 (html2canvas는 attribute만 봄)
+function _syncInputValuesForCapture(rootEl) {
+  if (!rootEl) return;
+  rootEl.querySelectorAll('input').forEach(inp => {
+    inp.setAttribute('value', inp.value);
+  });
+}
+
 async function exportSettlementImage() {
-  if (typeof html2canvas === 'undefined') { alert('이미지 변환 라이브러리(html2canvas)가 로드되지 않았습니다.'); return; }
+  if (typeof html2canvas === 'undefined') { 
+    alert('이미지 변환 라이브러리(html2canvas)가 로드되지 않았습니다.\n인터넷 연결을 확인해주세요.'); 
+    return; 
+  }
+  const el = $('#ss-print-area');
   try {
-    const el = $('#ss-print-area');
+    _syncInputValuesForCapture(el);
+    el.classList.add('capture-mode');
     const canvas = await html2canvas(el, { backgroundColor: '#ffffff', scale: 2, useCORS: true });
     const link = document.createElement('a');
     link.download = `정산표_${(DB.employees.find(e=>e.id===currentSheetEmpId)||{}).name||'직원'}_${currentSheetYM}.png`;
     link.href = canvas.toDataURL('image/png');
     link.click();
   } catch(e) { alert('이미지 저장 실패: ' + e.message); }
+  finally { el.classList.remove('capture-mode'); }
 }
 
 async function exportSettlementPDF() {
-  if (typeof html2canvas === 'undefined' || typeof jspdf === 'undefined') {
-    alert('PDF 라이브러리(html2canvas, jsPDF)가 로드되지 않았습니다.'); return;
+  const jspdfLib = window.jspdf || (typeof jspdf !== 'undefined' ? jspdf : null);
+  if (typeof html2canvas === 'undefined' || !jspdfLib) {
+    alert('PDF 라이브러리(html2canvas, jsPDF)가 로드되지 않았습니다.\n인터넷 연결을 확인해주세요.'); return;
   }
+  const el = $('#ss-print-area');
   try {
-    const el = $('#ss-print-area');
+    _syncInputValuesForCapture(el);
+    el.classList.add('capture-mode');
     const canvas = await html2canvas(el, { backgroundColor: '#ffffff', scale: 2, useCORS: true });
     const imgData = canvas.toDataURL('image/png');
-    const { jsPDF } = jspdf;
+    const { jsPDF } = jspdfLib;
     const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
     pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
     pdf.save(`정산표_${(DB.employees.find(e=>e.id===currentSheetEmpId)||{}).name||'직원'}_${currentSheetYM}.pdf`);
   } catch(e) { alert('PDF 저장 실패: ' + e.message); }
+  finally { el.classList.remove('capture-mode'); }
 }
 
 function exportSettlementExcel() {
@@ -6043,7 +6334,7 @@ function exportSettlementExcel() {
   rows.push(['직영업 실적인정금액', sheet.directRecognitionAmount]);
   rows.push(['DB영업 실적인정금액', sheet.dbRecognitionAmount]);
   rows.push(['실적인정 총합', sheet.recognitionTotal]);
-  rows.push([`구간 적용 (${sheet.bracket.label} → ${(sheet.bracket.rate*100)}%)`, sheet.bracketPay]);
+  rows.push([`구간 적용 (${sheet.bracket.label} → ${Math.round(sheet.bracket.rate*100)}%)`, sheet.bracketPay]);
   rows.push(['기타 프로모션 합계', sheet.etcTotal]);
   rows.push(['총 합계(공급가)', sheet.grossTotal]);
   rows.push([sheet.paymentType==='사업자' ? '부가세(10%)' : '세금(3.3%)', sheet.taxAmount]);
