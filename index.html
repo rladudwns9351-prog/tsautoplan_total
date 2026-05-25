@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_35.html -->
+<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_36.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -984,7 +984,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       </div>
     </div>
 
-    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item active" data-nav-id="n1" data-page="dashboard" draggable="false">
+    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item" data-nav-id="n1" data-page="dashboard" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">📊</span>
         <span style="flex:1">대시보드</span>
@@ -1040,7 +1040,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           <button class="nav-action-btn" onclick="event.stopPropagation();editNavItem(&#39;n6b&#39;)" title="수정">✏️</button>
           <button class="nav-action-btn delete" onclick="event.stopPropagation();deleteNavItem(&#39;n6b&#39;)" title="삭제">🗑️</button>
         </span>
-      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item" data-nav-id="n7" data-page="payroll" draggable="false">
+      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item active" data-nav-id="n7" data-page="payroll" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">💵</span>
         <span style="flex:1">급여대장</span>
@@ -1092,7 +1092,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="sync-dot" id="syncDot"></div>
         <div class="sync-info">
           <strong id="syncStatusText"><span style="color:var(--success)">●</span> CRM 연결됨 <span style="color:var(--text-muted);margin:0 6px">|</span> <span style="color:var(--purple)">●</span> 클라우드 저장 활성</strong>
-          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 07:25</strong>
+          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 07:34</strong>
         </div>
       </div>
       <div style="display:flex;gap:8px;align-items:center">
@@ -1143,7 +1143,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
             </div>
           </div>
           <div class="chart-container">
-            <canvas id="chart-monthly-revenue" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas>
+            <canvas id="chart-monthly-revenue" style="box-sizing: border-box; display: block; height: 300px; width: 750px;" width="750" height="300"></canvas>
           </div>
         </div>
         <div class="card">
@@ -1154,7 +1154,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
             </div>
           </div>
           <div class="chart-container">
-            <canvas id="chart-by-employee" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas>
+            <canvas id="chart-by-employee" style="box-sizing: border-box; display: block; height: 300px; width: 750px;" width="750" height="300"></canvas>
           </div>
         </div>
       </div>
@@ -1175,20 +1175,20 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
             </thead>
             <tbody>
     <tr>
-      <td>2026-06</td>
-      <td>테스트 12</td>
-      <td></td>
-      <td>강민지</td>
-      <td>2,000,000원</td>
-      <td><span class="badge badge-warning">최종심사진행</span></td>
-    </tr>
-  
-    <tr>
       <td>2026-05</td>
       <td>테스트 현대</td>
       <td></td>
       <td>강민지</td>
       <td>700,000원</td>
+      <td><span class="badge badge-warning">최종심사진행</span></td>
+    </tr>
+  
+    <tr>
+      <td>2026-06</td>
+      <td>테스트 12</td>
+      <td></td>
+      <td>강민지</td>
+      <td>2,000,000원</td>
       <td><span class="badge badge-warning">최종심사진행</span></td>
     </tr>
   </tbody>
@@ -1281,14 +1281,16 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       <span style="opacity:0.4;margin-right:4px">⋮⋮</span>정산월 🔗
     </th><th draggable="true" data-col-id="settlementStatus" ondragstart="handleColDragStart(event,&#39;settlementStatus&#39;)" ondragover="handleColDragOver(event)" ondragleave="handleColDragLeave(event)" ondrop="handleColDrop(event,&#39;settlementStatus&#39;)" ondragend="handleColDragEnd(event)" class="draggable-col-header" style="cursor:grab;user-select:none;" title="드래그해서 순서 변경 (CRM 데이터)">
       <span style="opacity:0.4;margin-right:4px">⋮⋮</span>정산상태 🔗
+    </th><th draggable="true" data-col-id="isDirect" ondragstart="handleColDragStart(event,&#39;isDirect&#39;)" ondragover="handleColDragOver(event)" ondragleave="handleColDragLeave(event)" ondrop="handleColDrop(event,&#39;isDirect&#39;)" ondragend="handleColDragEnd(event)" class="draggable-col-header" style="cursor:grab;user-select:none;" title="드래그해서 순서 변경 (CRM 데이터)">
+      <span style="opacity:0.4;margin-right:4px">⋮⋮</span>직영업 🔗
     </th></tr></thead>
-          <tbody><tr><td><strong>1</strong></td><td>롯데렌터카</td><td>강민지</td><td>테스트 12</td><td>010-8248-0939</td><td>그랜져</td><td>50,000,000원</td><td>1%</td><td>500,000원</td><td>1%</td><td>500,000원</td><td>0원</td><td>65,000원</td><td><strong style="color:var(--success)">935,000원</strong></td><td>2026-05-22</td><td>2026-05-29</td><td><span class="badge badge-secondary">미완료</span></td><td><span class="badge badge-accent" style="cursor:pointer" onclick="showFilesModal(21)" title="클릭하여 파일 보기">📎 2건</span></td><td><span title="장기재고 판매완료">장기재고 판매완료</span></td><td><span class="badge badge-secondary">대기</span></td><td>-</td><td>2026-05</td><td><span class="badge ">미정산</span></td></tr></tbody>
+          <tbody><tr><td><strong>2</strong></td><td>현대캐피탈</td><td>강민지</td><td>테스트 현대</td><td>010-0000-0000</td><td>-</td><td>35,000,000원</td><td>1%</td><td>350,000원</td><td>1%</td><td>350,000원</td><td>0원</td><td>0원</td><td><strong style="color:var(--success)">700,000원</strong></td><td>2026-05-25</td><td>-</td><td><span class="badge badge-secondary">미완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span class="badge badge-secondary">대기</span></td><td>-</td><td>2026-05</td><td><span class="badge ">미정산</span></td><td><span style="color:var(--text-muted);font-size:11px">DB영업</span></td></tr><tr><td><strong>1</strong></td><td>BNK캐피탈</td><td>강민지</td><td>테스트 12</td><td>010-8248-0939</td><td>-</td><td>50,000,000원</td><td>1%</td><td>500,000원</td><td>1%</td><td>500,000원</td><td>1,000,000원</td><td>0원</td><td><strong style="color:var(--success)">2,000,000원</strong></td><td>2026-05-25</td><td>2026-06-02</td><td><span class="badge badge-secondary">미완료</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span style="color:var(--text-muted)">-</span></td><td><span class="badge badge-secondary">대기</span></td><td>-</td><td>2026-06</td><td><span class="badge ">미정산</span></td><td><span style="color:var(--text-muted);font-size:11px">DB영업</span></td></tr></tbody>
         </table>
       </div>
     </div>
 
     <!-- ========== 인사카드 ========== -->
-    <div class="page active" id="page-employees">
+    <div class="page" id="page-employees">
       <div class="topbar">
         <div>
           <h2>👤 인사카드</h2>
@@ -1652,15 +1654,15 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- ========== 급여대장 ========== -->
-    <div class="page" id="page-payroll">
+    <div class="page active" id="page-payroll">
       <div class="topbar">
         <div>
           <h2>💵 급여대장</h2>
           <p style="color:var(--text-muted);font-size:12px;margin-top:4px">월별 급여 관리 (인사카드 직원 자동 반영)</p>
         </div>
         <div class="topbar-actions">
-          <select class="filter-select" id="payroll-year"></select>
-          <select class="filter-select" id="payroll-month"></select>
+          <select class="filter-select" id="payroll-year"><option value="2027">2027년</option><option value="2026" selected="">2026년</option><option value="2025">2025년</option><option value="2024">2024년</option><option value="2023">2023년</option></select>
+          <select class="filter-select" id="payroll-month"><option value="01">1월</option><option value="02">2월</option><option value="03">3월</option><option value="04">4월</option><option value="05" selected="">5월</option><option value="06">6월</option><option value="07">7월</option><option value="08">8월</option><option value="09">9월</option><option value="10">10월</option><option value="11">11월</option><option value="12">12월</option></select>
           <button class="btn btn-sm" onclick="exportPayrollExcel()">📊 Excel</button>
         </div>
       </div>
@@ -1675,7 +1677,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="stat-grid">
           <div class="stat">
             <div class="stat-label">정규직 인원</div>
-            <div class="stat-value" id="payroll-full-count">0명</div>
+            <div class="stat-value" id="payroll-full-count">2명</div>
           </div>
           <div class="stat">
             <div class="stat-label">세전 합계</div>
@@ -1687,7 +1689,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           </div>
           <div class="stat">
             <div class="stat-label">실지급액 (세후+수당)</div>
-            <div class="stat-value" id="payroll-full-post" style="color:var(--success)">0원</div>
+            <div class="stat-value" id="payroll-full-post" style="color:var(--success)">700,000원</div>
           </div>
         </div>
 
@@ -1704,7 +1706,43 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
                   <th>세전</th><th>세금</th><th>수당</th><th>실지급액</th><th>지급일자</th><th>상태</th><th>관리</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+      <tr>
+        <td><strong>shl001</strong></td>
+        <td>강민지 <span style="font-size:10px;color:var(--text-muted)">(경력직)</span></td>
+        <td>010-3564-0024</td>
+        <td>2025-11-01</td>
+        <td>205일</td>
+        <td>-</td>
+        <td style="color:var(--warning)">-</td>
+        <td><strong style="color:var(--accent)">700,000원</strong><br><span style="font-size:10px;color:var(--text-muted)">자동 1건</span></td>
+        <td style="color:var(--success)"><strong>700,000원</strong></td>
+        <td>-</td>
+        <td><span class="badge badge-warning">대기</span></td>
+        <td onclick="event.stopPropagation()">
+          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl001&#39;)" title="급여 입력">💵</button>
+          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl001&#39;)" title="정산서">📊</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td><strong>shl009</strong></td>
+        <td>박광석 <span style="font-size:10px;color:var(--text-muted)">(경력직)</span></td>
+        <td>-</td>
+        <td>2023-09-15</td>
+        <td>983일</td>
+        <td>-</td>
+        <td style="color:var(--warning)">-</td>
+        <td>-</td>
+        <td style="color:var(--success)"><strong>-</strong></td>
+        <td>-</td>
+        <td><span class="badge badge-danger">미입력</span></td>
+        <td onclick="event.stopPropagation()">
+          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl009&#39;)" title="급여 입력">💵</button>
+          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl009&#39;)" title="정산서">📊</button>
+        </td>
+      </tr>
+    </tbody>
             </table>
           </div>
         </div>
@@ -2505,7 +2543,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     <div class="modal-header">
       <div>
         <div class="modal-title">💵 영업자 수당 정산표</div>
-        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="settlementSheetSubtitle"></div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="settlementSheetSubtitle">강민지 · 영업1팀 · 경력직 · 2026-06 정산</div>
       </div>
       <button class="modal-close" onclick="closeSettlementSheet()">×</button>
     </div>
@@ -2528,7 +2566,69 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- 시트 본체 (이미지/PDF 추출 영역) -->
-    <div id="ss-print-area" class="settlement-sheet"></div>
+    <div id="ss-print-area" class="settlement-sheet">
+    <div class="ss-header">
+      <h3>■ 2026년 6월 실적 및 수당 정산표 / 8개월차</h3>
+      <div style="font-size:13px">지급일자 : 26.06</div>
+      <h3>■ 담당자 : 강민지</h3>
+    </div>
+  <div class="ss-block"><div class="ss-section-title">📌 직영업 실적 명세 (0건)</div><table>
+    <thead><tr>
+      <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
+      <th>확정일자</th><th>차종</th><th>정산기준가</th><th>인센%</th><th>인센금액</th>
+      <th>부가세(10%)</th>
+      <th>금융사<br>프로모션%</th><th>프로모션금액<br>(부가세X)</th><th>대리점수당</th>
+      <th>직영업(%)</th><th>직영업 금액</th><th>직영업 건<br>실적인정</th><th>실적<br>인정금액</th>
+    </tr></thead><tbody><tr><td colspan="18" style="padding:14px;color:#888">해당 정산월에 직영업 건이 없습니다.</td></tr></tbody></table></div><div class="ss-block"><div class="ss-section-title">📌 DB영업 실적 명세 (자동 1건 + 수기 0건)</div><table>
+    <thead><tr>
+      <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
+      <th>확정일자</th><th>차종</th><th>정산기준가</th><th>수당</th><th>수당금액</th>
+      <th>금융사프로모션</th><th>프로모션금액</th><th>대리점수당</th>
+      <th>DB영업(%)</th><th>DB영업 금액</th><th>총 매출액<br>(실+추가인정)</th><th>실적구간</th>
+    </tr></thead><tbody><tr>
+      <td>1</td>
+      <td>DB영업</td>
+      <td>현대캐피탈</td>
+      <td>강민지</td>
+      <td>테스트 현대</td>
+      <td>2026-05-25</td>
+      <td>-</td>
+      <td class="num">35,000,000원</td>
+      <td>1%</td>
+      <td class="num">350,000원</td>
+      <td>1%</td>
+      <td class="num">350,000원</td>
+      <td class="num">0원</td>
+      <td>100%</td>
+      <td class="num">700,000원</td>
+      <td class="num">700,000원</td>
+      <td style="font-size:10px">-</td>
+    </tr><tr>
+      <td colspan="14" class="sum-label">합 계</td>
+      <td class="sum-value">700,000원</td>
+      <td class="sum-value">700,000원</td>
+      <td class="sum-label" style="font-size:10px">40%</td>
+    </tr></tbody></table><div style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div></div><div class="ss-block" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"><div><div class="ss-section-title">📌 기타 프로모션 (수기 입력)</div><table class="ss-etc-table"><thead><tr>
+    <th style="width:40px">No</th><th>기타 프로모션</th><th style="width:100px">금액</th><th>비고</th><th style="width:40px"></th>
+  </tr></thead><tbody><tr><td colspan="5" style="padding:12px;color:#888">기타 프로모션 항목이 없습니다.</td></tr></tbody></table><div style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div></div><div><div class="ss-section-title">🎯 수당 산출 요약</div><table>
+    <tbody><tr><th style="width:50%">항목</th><th>금액</th></tr>
+    <tr><td>① 직영업 직접지급 수당</td><td class="num">0원</td></tr>
+    <tr><td style="padding-left:16px;font-size:10px;color:#666">= Σ직영업(인센+프로모+대리점-품의) × 100%</td><td></td></tr>
+    <tr><td>② 직영업 실적인정금액</td><td class="num">0원</td></tr>
+    <tr><td>③ DB영업 실적인정금액</td><td class="num">700,000원</td></tr>
+    <tr><td class="sum-label">실적인정 총합 (②+③)</td><td class="sum-value">700,000원</td></tr>
+    <tr><td>적용 구간</td><td style="font-weight:700;color:#2563eb">~ 1,000만원 미만 → 40%</td></tr>
+    <tr><td class="sum-label">④ 구간적용 수당</td><td class="sum-value">280,000원</td></tr>
+    <tr><td>⑤ 기타 프로모션 합계</td><td class="num">0원</td></tr>
+    <tr style="background:#fff2cc">
+      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ④ + ⑤</td>
+      <td class="num" style="font-weight:700;font-size:14px;padding:8px">280,000원</td>
+    </tr>
+  </tbody></table></div></div><div class="ss-block" style="margin-top:8px"><div class="ss-summary">
+      <div><div class="lbl">총 합계 (공급가)</div><div class="val">280,000원</div></div>
+      <div><div class="lbl">부가세 (10%)</div><div class="val" style="color:#2563eb">28,000원</div></div>
+      <div><div class="lbl">실 지급액</div><div class="val" style="color:#dc2626">308,000원</div></div>
+    </div></div></div>
   </div>
 </div>
 
@@ -4927,13 +5027,53 @@ function calcSettlementYMForMaster(m) {
 }
 
 // 특정 직원·특정 정산월(yyyy-mm)에 해당하는 마스터 건들 반환
+// 매칭은 사번(id)/이름(name) 양방향으로 시도 (CRM 데이터 호환성)
 function getAllowanceDealsFor(empId, ym) {
   if (!empId || !ym) return [];
+  const emp = (DB.employees || []).find(e => e.id === empId) || (DB.archivedEmployees||{})[empId];
+  const empName = emp ? emp.name : '';
   return (DB.master || []).filter(m => {
-    if (m.employeeId !== empId) return false;
+    const eid = String(m.employeeId || '').trim();
+    // 사번 직접 매칭 OR 이름 매칭
+    const matched = (eid === empId) || (empName && eid === empName);
+    if (!matched) return false;
     return calcSettlementYMForMaster(m) === ym;
   });
 }
+
+// 🔧 진단 함수: 콘솔에서 호출 → diagSettlement('shl001', '2026-06')
+window.diagSettlement = function(empId, ym) {
+  console.group('🔍 정산서 진단: ' + empId + ' / ' + ym);
+  const emp = (DB.employees || []).find(e => e.id === empId);
+  console.log('직원 정보:', emp);
+  if (!emp) { console.warn('❌ 해당 사번의 직원이 없습니다.'); console.groupEnd(); return; }
+  
+  const allMasterForEmp = (DB.master || []).filter(m => {
+    const eid = String(m.employeeId || '').trim();
+    return eid === empId || eid === emp.name;
+  });
+  console.log('📋 이 직원의 전체 펀딩 건:', allMasterForEmp.length + '건');
+  
+  allMasterForEmp.forEach((m, i) => {
+    const targetYM = calcSettlementYMForMaster(m);
+    const matched = targetYM === ym;
+    console.log(`  ${i+1}. [${m.finance}] ${m.customer}/${m.car}`, {
+      펀딩일: m.date,
+      인도일: m.deliveryDate,
+      인도완료: m.delivered,
+      직영업: m.isDirect,
+      employeeId필드값: m.employeeId,
+      계산된정산월: targetYM,
+      조회월과일치: matched ? '✅' : '❌'
+    });
+  });
+  
+  const matched = getAllowanceDealsFor(empId, ym);
+  console.log('🎯 ' + ym + ' 정산월 매칭 건:', matched.length + '건', matched);
+  console.groupEnd();
+  return { employee: emp, allDeals: allMasterForEmp, matched };
+};
+console.log('%c💡 정산서 진단 도구', 'color:#a78bfa;font-weight:bold', '콘솔에서 diagSettlement("shl001", "2026-06") 실행');
 
 // ============================================================
 //  정산서 - 수당 산출 핵심 로직
@@ -5150,6 +5290,47 @@ function renderSettlementSheetHTML(s) {
       <h3>■ 담당자 : ${escapeHtml(emp.name)}</h3>
     </div>
   `;
+  
+  // 디버그 정보 (전체 0건일 때만 표시)
+  if (s.directDeals.length === 0 && s.dbDeals.length === 0) {
+    const allForEmp = (DB.master || []).filter(m => {
+      const eid = String(m.employeeId || '').trim();
+      return eid === emp.id || eid === emp.name;
+    });
+    let diagHtml = `<div style="background:#fff7e6;border:1px solid #f59e0b;padding:10px;margin-bottom:14px;border-radius:6px;color:#000;font-size:12px">`;
+    diagHtml += `<strong>⚠️ ${s.ym} 정산월에 매칭된 펀딩 건이 없습니다.</strong><br>`;
+    if (allForEmp.length === 0) {
+      diagHtml += `· ${emp.name} 담당자의 마스터 펀딩 건 자체가 0건입니다. CRM에서 담당자 매핑을 확인하세요.`;
+    } else {
+      diagHtml += `· ${emp.name} 담당자의 전체 마스터 건: ${allForEmp.length}건 (아래 표시)<br>`;
+      diagHtml += `· 카운팅 규칙: <strong>현대캐피탈</strong>=펀딩일 다음달 / <strong>그외</strong>=인도일 다음달+인도완료<br><br>`;
+      diagHtml += `<table style="width:100%;border-collapse:collapse;font-size:11px;background:#fff"><thead><tr style="background:#f3f4f6">
+        <th style="padding:4px;border:1px solid #ccc">금융사</th>
+        <th style="padding:4px;border:1px solid #ccc">고객</th>
+        <th style="padding:4px;border:1px solid #ccc">펀딩일</th>
+        <th style="padding:4px;border:1px solid #ccc">인도일</th>
+        <th style="padding:4px;border:1px solid #ccc">인도완료</th>
+        <th style="padding:4px;border:1px solid #ccc">직영업</th>
+        <th style="padding:4px;border:1px solid #ccc">→ 정산월</th>
+      </tr></thead><tbody>`;
+      allForEmp.forEach(m => {
+        const tym = calcSettlementYMForMaster(m);
+        const match = tym === s.ym;
+        diagHtml += `<tr ${match?'style="background:#d1fae5"':''}>
+          <td style="padding:4px;border:1px solid #ccc">${escapeHtml(m.finance||'-')}</td>
+          <td style="padding:4px;border:1px solid #ccc">${escapeHtml(m.customer||'-')}</td>
+          <td style="padding:4px;border:1px solid #ccc">${m.date||'-'}</td>
+          <td style="padding:4px;border:1px solid #ccc">${m.deliveryDate||'-'}</td>
+          <td style="padding:4px;border:1px solid #ccc">${m.delivered?'✅':'❌'}</td>
+          <td style="padding:4px;border:1px solid #ccc">${m.isDirect?'🎯 직영업':'DB영업'}</td>
+          <td style="padding:4px;border:1px solid #ccc"><strong>${tym||'카운팅안됨'}</strong></td>
+        </tr>`;
+      });
+      diagHtml += `</tbody></table>`;
+    }
+    diagHtml += `</div>`;
+    html += diagHtml;
+  }
   
   // 2) 블록1: 직영업
   html += `<div class="ss-block">`;
