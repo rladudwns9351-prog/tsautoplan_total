@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_33.html -->
+<!-- saved from url=(0046)file:///C:/Users/rladu/Downloads/index_35.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -984,7 +984,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       </div>
     </div>
 
-    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item" data-nav-id="n1" data-page="dashboard" draggable="false">
+    <div id="navContainer"><div class="nav-group" data-group="메인" data-group-id="g1"><div class="group-header-row"><div class="nav-group-title">메인</div></div><div class="nav-item active" data-nav-id="n1" data-page="dashboard" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">📊</span>
         <span style="flex:1">대시보드</span>
@@ -1040,7 +1040,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           <button class="nav-action-btn" onclick="event.stopPropagation();editNavItem(&#39;n6b&#39;)" title="수정">✏️</button>
           <button class="nav-action-btn delete" onclick="event.stopPropagation();deleteNavItem(&#39;n6b&#39;)" title="삭제">🗑️</button>
         </span>
-      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item active" data-nav-id="n7" data-page="payroll" draggable="false">
+      </div></div><div class="nav-group" data-group="회계장부" data-group-id="g5"><div class="group-header-row"><div class="nav-group-title">회계장부</div></div><div class="nav-item" data-nav-id="n7" data-page="payroll" draggable="false">
         <span class="drag-handle">⋮⋮</span>
         <span class="icon">💵</span>
         <span style="flex:1">급여대장</span>
@@ -1092,7 +1092,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="sync-dot" id="syncDot"></div>
         <div class="sync-info">
           <strong id="syncStatusText"><span style="color:var(--success)">●</span> CRM 연결됨 <span style="color:var(--text-muted);margin:0 6px">|</span> <span style="color:var(--purple)">●</span> 클라우드 저장 활성</strong>
-          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 07:16</strong>
+          &nbsp;|&nbsp; 마지막 동기화: <strong id="lastSyncTime">2026-05-25 07:25</strong>
         </div>
       </div>
       <div style="display:flex;gap:8px;align-items:center">
@@ -1115,12 +1115,12 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
       <div class="stat-grid">
         <div class="stat">
           <div class="stat-label">이번달 매출</div>
-          <div class="stat-value" id="stat-revenue">0원</div>
+          <div class="stat-value" id="stat-revenue">700,000원</div>
           <div class="stat-change">▲ 전월 대비</div>
         </div>
         <div class="stat">
           <div class="stat-label">계약 건수</div>
-          <div class="stat-value" id="stat-contracts">2건</div>
+          <div class="stat-value" id="stat-contracts">1건</div>
           <div class="stat-change">▲ 이번달 누적</div>
         </div>
         <div class="stat">
@@ -1175,20 +1175,20 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
             </thead>
             <tbody>
     <tr>
-      <td>2026-05</td>
-      <td>테스트 1</td>
+      <td>2026-06</td>
+      <td>테스트 12</td>
       <td></td>
       <td>강민지</td>
-      <td>0원</td>
+      <td>2,000,000원</td>
       <td><span class="badge badge-warning">최종심사진행</span></td>
     </tr>
   
     <tr>
       <td>2026-05</td>
-      <td>인도테스트</td>
+      <td>테스트 현대</td>
       <td></td>
-      <td>관리자</td>
-      <td>0원</td>
+      <td>강민지</td>
+      <td>700,000원</td>
       <td><span class="badge badge-warning">최종심사진행</span></td>
     </tr>
   </tbody>
@@ -1288,7 +1288,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- ========== 인사카드 ========== -->
-    <div class="page" id="page-employees">
+    <div class="page active" id="page-employees">
       <div class="topbar">
         <div>
           <h2>👤 인사카드</h2>
@@ -1652,15 +1652,15 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- ========== 급여대장 ========== -->
-    <div class="page active" id="page-payroll">
+    <div class="page" id="page-payroll">
       <div class="topbar">
         <div>
           <h2>💵 급여대장</h2>
           <p style="color:var(--text-muted);font-size:12px;margin-top:4px">월별 급여 관리 (인사카드 직원 자동 반영)</p>
         </div>
         <div class="topbar-actions">
-          <select class="filter-select" id="payroll-year"><option value="2027">2027년</option><option value="2026" selected="">2026년</option><option value="2025">2025년</option><option value="2024">2024년</option><option value="2023">2023년</option></select>
-          <select class="filter-select" id="payroll-month"><option value="01">1월</option><option value="02">2월</option><option value="03">3월</option><option value="04">4월</option><option value="05" selected="">5월</option><option value="06">6월</option><option value="07">7월</option><option value="08">8월</option><option value="09">9월</option><option value="10">10월</option><option value="11">11월</option><option value="12">12월</option></select>
+          <select class="filter-select" id="payroll-year"></select>
+          <select class="filter-select" id="payroll-month"></select>
           <button class="btn btn-sm" onclick="exportPayrollExcel()">📊 Excel</button>
         </div>
       </div>
@@ -1675,7 +1675,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
         <div class="stat-grid">
           <div class="stat">
             <div class="stat-label">정규직 인원</div>
-            <div class="stat-value" id="payroll-full-count">2명</div>
+            <div class="stat-value" id="payroll-full-count">0명</div>
           </div>
           <div class="stat">
             <div class="stat-label">세전 합계</div>
@@ -1704,43 +1704,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
                   <th>세전</th><th>세금</th><th>수당</th><th>실지급액</th><th>지급일자</th><th>상태</th><th>관리</th>
                 </tr>
               </thead>
-              <tbody>
-      <tr>
-        <td><strong>shl001</strong></td>
-        <td>강민지 <span style="font-size:10px;color:var(--text-muted)">(경력직)</span></td>
-        <td>010-3564-0024</td>
-        <td>2025-11-01</td>
-        <td>205일</td>
-        <td>-</td>
-        <td style="color:var(--warning)">-</td>
-        <td>-</td>
-        <td style="color:var(--success)"><strong>-</strong></td>
-        <td>-</td>
-        <td><span class="badge badge-danger">미입력</span></td>
-        <td onclick="event.stopPropagation()">
-          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl001&#39;)" title="급여 입력">💵</button>
-          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl001&#39;)" title="정산서">📊</button>
-        </td>
-      </tr>
-    
-      <tr>
-        <td><strong>shl009</strong></td>
-        <td>박광석 <span style="font-size:10px;color:var(--text-muted)">(경력직)</span></td>
-        <td>-</td>
-        <td>2023-09-15</td>
-        <td>983일</td>
-        <td>-</td>
-        <td style="color:var(--warning)">-</td>
-        <td>-</td>
-        <td style="color:var(--success)"><strong>-</strong></td>
-        <td>-</td>
-        <td><span class="badge badge-danger">미입력</span></td>
-        <td onclick="event.stopPropagation()">
-          <button class="btn btn-sm btn-primary" onclick="openPayrollFullModal(&#39;shl009&#39;)" title="급여 입력">💵</button>
-          <button class="btn btn-sm" onclick="openSettlementSheet(&#39;shl009&#39;)" title="정산서">📊</button>
-        </td>
-      </tr>
-    </tbody>
+              <tbody></tbody>
             </table>
           </div>
         </div>
@@ -2240,8 +2204,8 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
   <div class="modal" style="max-width:560px">
     <div class="modal-header">
       <div>
-        <div class="modal-title" id="payrollFullTitle">💵 강민지 급여 입력</div>
-        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="payrollFullSubtitle">2026-05 · 영업1팀 · 정규직</div>
+        <div class="modal-title" id="payrollFullTitle">급여 입력</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="payrollFullSubtitle"></div>
       </div>
       <button class="modal-close" onclick="closePayrollFullModal()">×</button>
     </div>
@@ -2291,7 +2255,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     <div style="background:var(--bg-tertiary);border-radius:6px;padding:12px;margin-bottom:12px;border:1px solid var(--accent)">
       <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
         <span>🎯 수당지급 (마스터시트 자동 집계 · 실매출액 기준)</span>
-        <span id="pay-allowance-meta" style="font-size:11px;color:var(--text-muted)">자동집계: 0원원 · 0건</span>
+        <span id="pay-allowance-meta" style="font-size:11px;color:var(--text-muted)"></span>
       </div>
       <div style="display:grid;grid-template-columns:1fr;gap:8px">
         <div>
@@ -2299,7 +2263,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
           <input id="pay-allowance" type="number" oninput="sumTax()" placeholder="0" style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--accent);background:var(--bg-card);color:var(--text-primary);font-size:14px;font-weight:600;font-family:inherit">
         </div>
       </div>
-      <div id="pay-allowance-detail" style="margin-top:8px;font-size:11px;color:var(--text-muted);max-height:120px;overflow-y:auto"><div style="color:var(--text-muted);font-size:11px">해당 정산월에 매칭되는 마스터 건이 없습니다.</div></div>
+      <div id="pay-allowance-detail" style="margin-top:8px;font-size:11px;color:var(--text-muted);max-height:120px;overflow-y:auto"></div>
     </div>
 
     <div class="form-row">
@@ -2319,7 +2283,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- 숨김: 세금 총합 저장용 -->
-    <input id="pay-tax" type="hidden" value="0">
+    <input id="pay-tax" type="hidden">
 
     <div style="margin-top:16px;display:flex;gap:8px;justify-content:space-between">
       <button class="btn btn-danger btn-sm" onclick="deletePayrollFull()">🗑️ 삭제</button>
@@ -2541,7 +2505,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     <div class="modal-header">
       <div>
         <div class="modal-title">💵 영업자 수당 정산표</div>
-        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="settlementSheetSubtitle">강민지 · 영업1팀 · 경력직 · 2026-05 정산</div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:4px" id="settlementSheetSubtitle"></div>
       </div>
       <button class="modal-close" onclick="closeSettlementSheet()">×</button>
     </div>
@@ -2564,46 +2528,7 @@ tr:hover td { background: rgba(79, 139, 255, 0.05); }
     </div>
 
     <!-- 시트 본체 (이미지/PDF 추출 영역) -->
-    <div id="ss-print-area" class="settlement-sheet">
-    <div class="ss-header">
-      <h3>■ 2026년 5월 실적 및 수당 정산표 / 7개월차</h3>
-      <div style="font-size:13px">지급일자 : 26.05</div>
-      <h3>■ 담당자 : 강민지</h3>
-    </div>
-  <div class="ss-block"><div class="ss-section-title">📌 직영업 실적 명세 (0건)</div><table>
-    <thead><tr>
-      <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
-      <th>확정일자</th><th>차종</th><th>정산기준가</th><th>인센%</th><th>인센금액</th>
-      <th>부가세(10%)</th>
-      <th>금융사<br>프로모션%</th><th>프로모션금액<br>(부가세X)</th><th>대리점수당</th>
-      <th>직영업(%)</th><th>직영업 금액</th><th>직영업 건<br>실적인정</th><th>실적<br>인정금액</th>
-    </tr></thead><tbody><tr><td colspan="18" style="padding:14px;color:#888">해당 정산월에 직영업 건이 없습니다.</td></tr></tbody></table></div><div class="ss-block"><div class="ss-section-title">📌 DB영업 실적 명세 (자동 0건 + 수기 0건)</div><table>
-    <thead><tr>
-      <th>No</th><th>영업구분</th><th>업체명</th><th>실판<br>담당자</th><th>고객</th>
-      <th>확정일자</th><th>차종</th><th>정산기준가</th><th>수당</th><th>수당금액</th>
-      <th>금융사프로모션</th><th>프로모션금액</th><th>대리점수당</th>
-      <th>DB영업(%)</th><th>DB영업 금액</th><th>총 매출액<br>(실+추가인정)</th><th>실적구간</th>
-    </tr></thead><tbody><tr><td colspan="17" style="padding:14px;color:#888">해당 정산월에 DB영업 건이 없습니다. <button onclick="addManualDBDeal()" style="margin-left:8px;padding:2px 8px;font-size:11px">+ 수기 추가</button></td></tr></tbody></table><div style="text-align:right;margin-top:4px"><button class="btn btn-sm" onclick="addManualDBDeal()" style="font-size:11px">+ DB영업 수기 추가</button></div></div><div class="ss-block" style="display:grid;grid-template-columns:1fr 1fr;gap:16px"><div><div class="ss-section-title">📌 기타 프로모션 (수기 입력)</div><table class="ss-etc-table"><thead><tr>
-    <th style="width:40px">No</th><th>기타 프로모션</th><th style="width:100px">금액</th><th>비고</th><th style="width:40px"></th>
-  </tr></thead><tbody><tr><td colspan="5" style="padding:12px;color:#888">기타 프로모션 항목이 없습니다.</td></tr></tbody></table><div style="margin-top:6px"><button class="btn btn-sm" onclick="addEtcPromo()" style="font-size:11px">+ 항목 추가</button></div></div><div><div class="ss-section-title">🎯 수당 산출 요약</div><table>
-    <tbody><tr><th style="width:50%">항목</th><th>금액</th></tr>
-    <tr><td>① 직영업 직접지급 수당</td><td class="num">0원</td></tr>
-    <tr><td style="padding-left:16px;font-size:10px;color:#666">= Σ직영업(인센+프로모+대리점-품의) × 100%</td><td></td></tr>
-    <tr><td>② 직영업 실적인정금액</td><td class="num">0원</td></tr>
-    <tr><td>③ DB영업 실적인정금액</td><td class="num">0원</td></tr>
-    <tr><td class="sum-label">실적인정 총합 (②+③)</td><td class="sum-value">0원</td></tr>
-    <tr><td>적용 구간</td><td style="font-weight:700;color:#2563eb">~ 1,000만원 미만 → 40%</td></tr>
-    <tr><td class="sum-label">④ 구간적용 수당</td><td class="sum-value">0원</td></tr>
-    <tr><td>⑤ 기타 프로모션 합계</td><td class="num">0원</td></tr>
-    <tr style="background:#fff2cc">
-      <td style="font-weight:700;padding:8px">총 합계 (공급가) = ① + ④ + ⑤</td>
-      <td class="num" style="font-weight:700;font-size:14px;padding:8px">0원</td>
-    </tr>
-  </tbody></table></div></div><div class="ss-block" style="margin-top:8px"><div class="ss-summary">
-      <div><div class="lbl">총 합계 (공급가)</div><div class="val">0원</div></div>
-      <div><div class="lbl">부가세 (10%)</div><div class="val" style="color:#2563eb">0원</div></div>
-      <div><div class="lbl">실 지급액</div><div class="val" style="color:#dc2626">0원</div></div>
-    </div></div></div>
+    <div id="ss-print-area" class="settlement-sheet"></div>
   </div>
 </div>
 
@@ -3025,15 +2950,11 @@ async function sbLoadStaff() {
 let DB = {
   schema_version: SCHEMA_VERSION,
   employees: [
-    { id: 'shl001', name: '강민지', dept: '영업1팀', joinDate: '2024-01-15', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15 },
-    { id: 'shl002', name: '김영준', dept: '영업1팀', joinDate: '2024-03-01', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15 },
-    { id: 'shl003', name: '조문교', dept: '영업2팀', joinDate: '2023-08-20', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15 },
-    { id: 'shl004', name: '이원용', dept: '영업2팀', joinDate: '2024-05-10', employmentType: '계약직', career: '신입', resignDate: '', annualLeave: 0 },
-    { id: 'shl005', name: '강혜옥', dept: '영업1팀', joinDate: '2023-11-05', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15 },
-    { id: 'shl006', name: '박대원', dept: '영업2팀', joinDate: '2024-02-12', employmentType: '계약직', career: '신입', resignDate: '', annualLeave: 0 },
-    { id: 'shl007', name: '정서준', dept: '영업1팀', joinDate: '2024-06-01', employmentType: '계약직', career: '신입', resignDate: '', annualLeave: 0 },
-    { id: 'shl008', name: '이성준', dept: '영업2팀', joinDate: '2024-04-20', employmentType: '계약직', career: '신입', resignDate: '', annualLeave: 0 },
-    { id: 'shl009', name: '박광석', dept: '영업1팀', joinDate: '2023-09-15', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15 }
+    { id: 'shl001', name: '강민지', dept: '영업1팀', joinDate: '2025-11-01', employmentType: '정규직', career: '경력직', resignDate: '', annualLeave: 15, phone: '010-3564-0024' },
+    { id: 'shl002', name: '박광석', dept: '영업1팀', joinDate: '2026-05-25', employmentType: '계약직', career: '경력직', resignDate: '', annualLeave: 0, phone: '010-5644-5649' },
+    { id: 'shl003', name: '정서준', dept: '영업1팀', joinDate: '2026-05-25', employmentType: '계약직', career: '신입',   resignDate: '', annualLeave: 0, phone: '010-5555-3254' },
+    { id: 'shl004', name: '강혜옥', dept: '영업1팀', joinDate: '2026-05-25', employmentType: '계약직', career: '경력직', resignDate: '', annualLeave: 0, phone: '010-6770-6063' },
+    { id: 'shl005', name: '이성준', dept: '영업1팀', joinDate: '2026-05-25', employmentType: '계약직', career: '신입',   resignDate: '', annualLeave: 0, phone: '010-2182-6699' }
   ],
   // 연/월차 사용 내역 - { employeeId, date, type('연차'/'반차'), reason }
   leaveRecords: [],
@@ -3134,18 +3055,15 @@ function loadData() {
   try {
     const loaded = JSON.parse(saved);
     
-    // ⚠️ 직원이 0명이면 손상된 데이터로 간주 (master는 빈 배열 OK - CRM에서 채움)
-    const empty = !loaded || 
-                  !Array.isArray(loaded.employees) || loaded.employees.length === 0;
-    
-    if (empty) {
-      console.warn('🚨 직원 데이터 손상 - 샘플 직원으로 복구');
+    // 데이터 형식만 검증 (직원 0명은 사용자가 의도한 것일 수 있으므로 복구 안함)
+    if (!loaded || typeof loaded !== 'object') {
+      console.warn('🚨 저장 데이터 형식 오류 - 샘플로 복구');
       localStorage.removeItem(STORAGE_KEY);
       saveData();
       return;
     }
     
-    // 마이그레이션 (master 빈배열도 정상으로 처리)
+    // 마이그레이션 (master/employees 빈배열도 정상으로 처리)
     DB = migrateDB(loaded);
     saveData();
   } catch(e) {
@@ -3160,8 +3078,9 @@ function migrateDB(loaded) {
   
   if (!loaded || typeof loaded !== 'object') return SAMPLE;
   
-  if (!Array.isArray(loaded.employees) || loaded.employees.length === 0) {
-    loaded.employees = SAMPLE.employees;
+  // employees 배열 자체가 없으면 빈 배열로 (사용자가 비운 상태는 그대로 유지)
+  if (!Array.isArray(loaded.employees)) {
+    loaded.employees = [];
   }
   // career 필드 마이그레이션 - 없으면 '경력직' 기본값
   loaded.employees.forEach(e => { if (!e.career) e.career = '경력직'; });
@@ -3265,6 +3184,8 @@ let tsSyncPending = new Set();  // 변경된 영역만 동기화
 function saveData(domain = null) {
   // 1) LocalStorage 즉시 저장 (오프라인 백업)
   localStorage.setItem(STORAGE_KEY, JSON.stringify(DB));
+  // 🛡️ 사용자 편집 시각 기록 (60초간 클라우드 동기화 보호용)
+  localStorage.setItem('ts_last_edit_at', String(Date.now()));
   
   // 2) TS Supabase 자동 동기화 (디바운스 1초)
   if (!isTsSbConfigured()) return;
@@ -3310,18 +3231,45 @@ async function tsSyncToCloud(domains) {
 
 // === 직원 ===
 async function tsPushEmployees() {
+  const localIds = (DB.employees || []).map(e => e.id);
   const rows = (DB.employees || []).map(e => ({
     id: e.id,
     name: e.name || '',
     dept: e.dept || '',
     employment_type: e.employmentType || '정규직',
+    career: e.career || '경력직',
     join_date: e.joinDate || null,
     resign_date: e.resignDate || null,
     phone: e.phone || '',
     annual_leave: Number(e.annualLeave || 15)
   }));
+  
+  // 1) 클라우드에 있는 직원 중, 로컬에 없는 것 = 사용자가 삭제한 것 → 클라우드에서도 삭제
+  try {
+    const cloudRows = await tsFetch('ts_employees?select=id');
+    const cloudIds = cloudRows.map(r => r.id);
+    const toDelete = cloudIds.filter(id => !localIds.includes(id));
+    if (toDelete.length > 0) {
+      const quoted = toDelete.map(id => `"${id}"`).join(',');
+      await tsFetch(`ts_employees?id=in.(${quoted})`, 'DELETE');
+      console.log('[TS-SB] 클라우드에서 직원 삭제:', toDelete.join(', '));
+    }
+  } catch(e) {
+    console.warn('[TS-SB] 클라우드 직원 동기 삭제 실패:', e.message);
+  }
+  
+  // 2) UPSERT (로컬에 있는 직원들)
   if (rows.length === 0) return;
-  await tsFetch('ts_employees?on_conflict=id', 'POST', rows);
+  // career 컬럼이 클라우드 테이블에 없을 수 있어 실패하면 career 제거 후 재시도
+  try {
+    await tsFetch('ts_employees?on_conflict=id', 'POST', rows);
+  } catch(e) {
+    if (String(e.message || '').includes('career')) {
+      console.warn('[TS-SB] career 컬럼 없음 - 제외하고 재시도');
+      const rowsWithoutCareer = rows.map(r => { const { career, ...rest } = r; return rest; });
+      await tsFetch('ts_employees?on_conflict=id', 'POST', rowsWithoutCareer);
+    } else { throw e; }
+  }
 }
 
 async function tsPullEmployees() {
@@ -3331,6 +3279,7 @@ async function tsPullEmployees() {
     name: r.name,
     dept: r.dept,
     employmentType: r.employment_type,
+    career: r.career || '경력직',
     joinDate: r.join_date || '',
     resignDate: r.resign_date || '',
     phone: r.phone || '',
@@ -3510,6 +3459,15 @@ async function tsPullArchived() {
 // ============================================================
 async function tsPullAll() {
   if (!isTsSbConfigured()) return;
+  
+  // 🛡️ 로컬 편집 보호: 최근 60초 내 사용자 편집이 있었다면 클라우드 덮어쓰기 스킵
+  const lastEdit = Number(localStorage.getItem('ts_last_edit_at') || 0);
+  const recentEdit = (Date.now() - lastEdit) < 60000;
+  if (recentEdit) {
+    console.log('[TS-SB] ⏸️ 최근 편집 감지 - 클라우드 동기화 보류 (로컬 우선)');
+    return;
+  }
+  
   console.log('%c[TS-SB]', 'color:#a78bfa;font-weight:bold', '☁️ 클라우드에서 데이터 로딩...');
   
   const tasks = await Promise.allSettled([
@@ -3526,8 +3484,14 @@ async function tsPullAll() {
   const [emp, leaves, payroll, finance, cols, vals, settings, archived] = tasks;
   
   let loaded = 0;
-  if (emp.status === 'fulfilled' && emp.value.length > 0) {
+  // 🛡️ 직원 데이터: 로컬에 직원이 있으면 클라우드로 덮어쓰지 않음 (로컬이 진실)
+  // 클라우드 데이터는 "처음 시작할 때" 또는 "로컬이 비었을 때"만 채워줌
+  if (emp.status === 'fulfilled' && emp.value.length > 0 && (DB.employees || []).length === 0) {
     DB.employees = emp.value; loaded++;
+    console.log('[TS-SB] 직원 데이터 클라우드에서 로딩 (로컬 비어있음)');
+  } else if (emp.status === 'fulfilled' && (DB.employees || []).length > 0) {
+    // 로컬 우선 - 클라우드는 무시
+    console.log('[TS-SB] 직원 데이터는 로컬 우선 적용 (클라우드 덮어쓰기 안함)');
   }
   if (leaves.status === 'fulfilled') { DB.leaveRecords = leaves.value; loaded++; }
   if (payroll.status === 'fulfilled') { DB.payroll = payroll.value; loaded++; }
